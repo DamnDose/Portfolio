@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Internal CSS Examples</title>
+    <style>
+      div {
+        color:red;
+        font-family: Impact;
+        font-size: 48px;
+      }
+      #firstDiv {
+        color:Dodgerblue;
+        font-family: Apple Chancery;
+        font-size: 30px;
+      }
+      .highlight {
+        background-color: yellow;
+        color:black;
+      }
+
+      .card {
+        border: 3px solid black;
+        border-radius: 20px;
+        /* offset-x, offset-y, blur-radius. spread-radius also may use "inset"
+        to make the box shadow on the inside */
+        box-shadow: pink 20px 20px 30px 25px;
+        background: teal;
+        color: orange;
+        font-family: Papyrus;
+        margin: 25px;
+        padding: 25px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>This is my first internally styled "div" in red</div>
+    <br></br>
+      <div id="firstDiv">This is another div using an "ID Code" with the color
+      Dodgerblue.</div>
+      <hr></hr>
+      <div class="highlight">This is div, is using "highlight" in yellow.</div>
+      <br></br>
+      <div class="card">This div, is using the following...<br>
+        <ul>
+          <li>Border <br>
+          <li>Border-Radius <br>
+          <li>Box-ShadowCard <br>
+          <li>Margin <br>
+          <li>Padding <br>
+         </ul>
+       </div>
+       <div class="highlight">This is div, is Highlight + Card</div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.card {
+  border: 3px solid black;
+  border-radius: 20px;
+  /* offset-x, offset-y, blur-radius. spread-radius also may use "inset"
+  to make the box shadow on the inside */
+  box-shadow: 20px 20px 30px 25px;
+  margin: 25px;
+  padding: 25px;
+}
