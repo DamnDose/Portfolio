@@ -1,0 +1,64 @@
+/* This is my CSS for Assignment6 */
+
+#myNavBar {
+  width: 100%;
+  text-align: center;
+
+}
+
+#myNavBar ul {
+background: linear-gradient(to right, black, orange);
+list-style-type: none;
+padding-inline-start: 0px;
+width: 80%;
+display: inline-block;
+}
+
+#myNavBar ul li {
+display: inline-block;
+background: lightyellow;
+border: 2px solid black;
+margin: 30px;
+padding: 10px;
+}
+
+#myNavBar ul li:hover {
+background: linear-gradient(to left, lightgreen, white);
+}
+
+#cta {
+float: right;
+}
+
+header div img {
+width: 500px;
+height: auto;
+}
+
+#cars {
+list-style-type: circle;
+color: purple;
+}
+
+#cars li:nth-child(1) a {
+color: red;
+}
+
+#cars li:nth-child(2) a {
+color: orange;
+}
+
+#cars li:nth-child(3) a {
+color: blue;
+}
+
+#cars li:nth-child(4) a {
+color: green;
+}
+
+
+#zoo li {
+font-family: Apple chancery;
+font-size: 20px;
+color: red;
+}
