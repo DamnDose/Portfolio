@@ -2,23 +2,64 @@
 <html>
   <head>
     <title>Assignment 6</title>
+    <style>
+
+      #myNavBar {
+        width: 100%;
+        text-align: center;
+
+      }
+
+    #myNavBar ul {
+      background: linear-gradient(to right, red, green);
+      list-style-type: none;
+      padding-inline-start: 0px;
+      width: 80%;
+      display: inline-block;
+    }
+
+    #myNavBar ul li {
+      display: inline-block;
+      background: lightyellow;
+      border: 2px solid black;
+      margin: 30px;
+      padding: 10px;
+    }
+
+    #myNavBar ul li:hover {
+      background: linear-gradient(to left, dodgerblue, white);
+    }
+
+    #cta {
+      float: right;
+    }
+
+
+
+    </style>
   </head>
   <body>
-    <h1>Assignment 6 - Three Navigation Bars</h1>
+    <h1 style="text-align: center;">Assignment 6 - Three Navigation Bars</h1>
 
-    <ol>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-    </ol>
+  <header>
+    <div style="text-align: center">
+        <img src="../images/giphyBlueMatrix.gif" alt="Blue matrix code" >
+    </div>
 
-    <ul>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-      <li><a href="insert link here"> The name of the link here </a>
-    </ul    
+    <nav id="myNavBar">
+      <ul>
+        <li><a href="#">Home</a>
+        <li><a href="#">About Me</a>
+        <li><a href="#">Gallery</a>
+        <li id="cta"><a href="#">Message Dose</a>
+
+      </ul>
+    </nav>
+
+
+  </header>
+
+
 
 
   </body>
