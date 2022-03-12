@@ -1,0 +1,19 @@
+body {
+  background-image: url("../images/dnablue.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+}
+
+header {
+  background-color: black;
+}
+
+
+ul {
+  background-color: red;
+}
+ul li {
+  background-color: lightgreen;
+
+}
