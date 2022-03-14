@@ -1,19 +1,50 @@
 body {
-  background-image: url("../images/dnablue.gif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40vh;
+  background: lightyellow;
+  font-family: Anton;
+  font-weight: 300;
+}
+
+.container {
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: 10px;
 }
 
 header {
-  background-color: black;
+  background-image: url("../images/dnablue.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
 }
 
-
-ul {
-  background-color: red;
+.logo {
+  float: left;
+  width: 250px;
 }
-ul li {
-  background-color: lightgreen;
 
+nav {
+  float: right;
+  padding-right: 50px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 70px;
+}
+
+nav li a {
+  font-size: 20px;
+  color: orange;
+  text-transform: uppercase;
+}
+nav a:hover {
+  /* color: black; */
 }
