@@ -1,0 +1,74 @@
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Still have to find out about this "*" code */
+*{
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* my navbar styling starts here */
+.navbar {
+  background-image: url("../images/dnablue.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Ubuntu;
+  padding: 100px 0;
+  position: fixed;
+  width: 100%;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+/* Starting home section styling */
+
+.home {
+  display: flex;
+  background: url("../images/dose.png") no-repeat center;
+  background-color: lightblue;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: Ubuntu;
+}
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
