@@ -16,7 +16,8 @@
 
 /* my navbar styling starts here */
 .navbar {
-  background-image: url("../images/dnablue.gif");
+  /* background-image: url("../images/dnablue.gif"); */
+  background-color: crimson;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +51,7 @@
 
 .home {
   display: flex;
-  background: url("../images/dose.png") no-repeat center;
+  background: url("#") no-repeat;
   background-color: lightblue;
   height: 100vh;
   color: #fff;
