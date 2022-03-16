@@ -3,130 +3,135 @@
   <head>
     <meta charset="utf-8">
     <title>Assignment 7 - Div Only Layout</title>
-        <style>
+    <style>
+      body {
+        background: tan;
+        margin: 0;
+      }
+      #container {
+        background: silver;
+        width: 1000px;
+        height: 100vh;
+        margin: 0 auto;
+      }
+      #header {
+        background: #333;
+        no-repeat:
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid blue;
+      }
+      #logo {
+        background: crimson;
+        width: 50px;
+        height: 50px;
+        float: left;
+        text-align: center;
 
-body {
-            background: tan;
-            margin: 0;
-          }
-#container {
-            background: silver;
-            width: 600px;
-            margin: 0 auto;
+      }
+      #top_info {
+        background: green;
+        border: 1px solid orange;
+        float: right;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+      }
+      #navbar {
+        height: 20px;
+        clear: both;
+        }
+      #navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+      }
+      #navbar li {
+        text-align: center;
+      }
 
-          }
-#header {
-            background: #333;
-            no-repeat:
-            width: 100%;
-            height: 60px;
-            border-bottom: 1px solid blue;
-          }
-#logo {
-  background: crimson;
-  width: 50px;
-  height: 50px;
-  float: left;
-  text-align: center;
-
-}
-#top_info {
-            background: green;
-            border: 1px solid orange;
-            float: right;
-            width: 100px;
-            height: 40px;
-            text-align: center;
-          }
-#navbar {
-      height: 20px;
-      clear: both;
-}
-#navbar ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none
-}
-
-#navbar ul li {
-      float: left;
-      padding: 10px;
-
-}
-#navbar ul li a {
-      background: lightyellow;
-      border: 2px solid pink;
-      color: brown;
-      float: left;
-      font-size: 15px;
-      padding: 0 0 0 85px;
-
-}
-#navbar ul li a:hover  {
-            background: lightblue;
-}
-#banner {
-          background: purple;
-          height: 120px;
-          clear: both;
-          text-align: center;
-          font-size: 40px;
-}
-#section-1 {
-  background: lightgreen;
-  border: 1px solid black;
-  float: left;
-  width: 290px;
-  height: 200px;
-  text-align: center;
-  font-size: 30px;
-}
-#section-2 {
-  background: lightgreen;
-  border: 1px solid black;
-  float: right;
-  font-size: 30px;
-  width: 290px;
-  height: 200px;
-  text-align: center;
-
-}
-#footer {
-  background: grey;
-  border: 3px solid crimson;
-  clear: both;
-  font-size: 50px;
-  text-align: center;
-  width: 100%;
-  height: 20vh;
-}
-        </style>
+      #navbar ul li {
+        float: left;
+        padding: 10px;
+      }
+      #navbar ul li a {
+        background: lightyellow;
+        border: 2px solid pink;
+        color: brown;
+        float: left;
+        font-size: 15px;
+      }
+      #navbar ul li a:hover  {
+        background: lightblue;
+      }
+      #banner {
+        background: purple;
+        height: 120px;
+        clear: both;
+        text-align: center;
+        font-size: 40px;
+      }
+      #section-1 {
+        background: lightgreen;
+        border: 1px solid black;
+        float: left;
+        width: 290px;
+        height: 200px;
+        text-align: center;
+        font-size: 30px;
+      }
+      #section-2 {
+        background: lightgreen;
+        border: 1px solid black;
+        float: right;
+        font-size: 30px;
+        width: 290px;
+        height: 200px;
+        text-align: center;
+      }
+      #footer {
+        background: grey;
+        border: 3px solid crimson;
+        clear: both;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
+        height: 10vh;
+      }
+    </style>
   </head>
   <body>
-      <!-- CONTAINER -->
-      <div id="container">
-        <!-- HEADER -->
-        <div id="header"> <h1 style="text-align: center;">This is the Header</h1>
-              <div id="logo">Logo Here</div>
-              <div id="top_info">Top Info</div>
-            <div id="navbar">
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>
-            </div>
+    <!-- CONTAINER -->
+    <div id="container">
+      <!-- HEADER -->
+      <div id="header">
+        <h1 style="text-align: center;">This is the Header</h1>
+        <div id="logo">Logo Here</div>
+        <div id="top_info">Top Info</div>
+        <div id="navbar">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
         </div>
+      </div>
       <!-- CONTENT AREA -->
-        <div id="content_area">
-            <div id="banner">Banner</div>
-            <div id="section-1">Left section 1 Content</div>
-            <div id="section-2">Left Section 2 Content</div>
+      <div id="content_area">
+        <div id="banner">Banner</div>
+        <div id="section-1">
+          <h4>Left section 1 Content</h2>
+          <p>random text in here</p>
         </div>
-        <!-- Footer -->
-        <div id="footer">Footer</div>
-        </div> <!-- END CONTAINER -->
-
+        <div id="section-2">
+          <h4>Left Section 2 Content</h4>
+          <p>random text in here</p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div id="footer">Footer</div>
+    </div> <!-- END CONTAINER -->
   </body>
 </html>

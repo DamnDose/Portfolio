@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Examples</title>
+    <style>
+      #uglyTable,
+      #uglyTable caption,
+      #uglyTable th,
+      #uglyTable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #ugleTable {
+        magrin-bottom: 48px;
+      }
+      #uglyHeader {
+        background: green;
+      }
+      #uglyTableCol {
+        background-color: orange;
+      }
+
+      #prettyTable {
+        background-color: tan;
+        border: 1px solid green;
+        border-collapse: collapse;
+      }
+      #prettyHeader {
+        background-color: blue;
+        color: lightyellow;
+        padding: 10px;
+        font-family: Anton;
+      }
+      /* #prettyTable th {
+        padding-bottom: 12px;
+        padding-right: 24px;
+      } */
+      #prettyTable td {
+        padding-bottom: 4px 0;
+      }
+      #prettyTable tr:nth-child(even) {
+        background-color: lightgreen;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Ugly Table -->
+    <table id="uglyTable">
+      <caption>This is an ugle table</caption>
+      <colgroup>
+        <col id="ugleTableCol" span="2">
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="uglyHeader">
+          <td>Nintendo</td>
+          <td>Playstation</td>
+          <td>Xbox</td>
+          <td>PC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Super Smash Bros.</td>
+          <td>Doe</td>
+          <td>Panther</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br><br>
+    <hr>
+    <br><br><br><br>
+
+    <!-- Pretty Table -->
+
+    <table id="prettyTable">
+      <caption>This is a Pretty table</caption>
+      <thead>
+        <tr id="prettyHeader">
+          <td>Nintendo</td>
+          <td>Playstation</td>
+          <td>Xbox</td>
+          <td>PC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>Panther</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Van Dort</td>
+          <td>Butterfly</td>
+          <td>Fish</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
