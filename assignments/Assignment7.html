@@ -10,55 +10,41 @@
       }
       #container {
         background: silver;
-        width: 1000px;
-        height: 100vh;
         margin: 0 auto;
       }
       #header {
         background: #333;
-        no-repeat:
-        width: 100%;
-        height: 60px;
         border-bottom: 1px solid blue;
       }
       #logo {
         background: crimson;
-        width: 50px;
-        height: 50px;
-        float: left;
         text-align: center;
 
       }
       #top_info {
         background: green;
         border: 1px solid orange;
-        float: right;
-        width: 100px;
-        height: 40px;
         text-align: center;
       }
       #navbar {
-        height: 20px;
         clear: both;
         }
       #navbar ul {
         margin: 0;
         padding: 0;
-        list-style-type: none
-      }
-      #navbar li {
+        list-style-type: none;
         text-align: center;
+
       }
 
       #navbar ul li {
-        float: left;
+        display: inline-block;
         padding: 10px;
       }
       #navbar ul li a {
         background: lightyellow;
         border: 2px solid pink;
         color: brown;
-        float: left;
         font-size: 15px;
       }
       #navbar ul li a:hover  {
@@ -66,28 +52,59 @@
       }
       #banner {
         background: purple;
-        height: 120px;
         clear: both;
         text-align: center;
         font-size: 40px;
       }
-      #section-1 {
-        background: lightgreen;
-        border: 1px solid black;
-        float: left;
-        width: 290px;
-        height: 200px;
-        text-align: center;
-        font-size: 30px;
+      #animals {
+        display: flex;
       }
-      #section-2 {
+      #vs {
+        background: blue;
+        flex: 1;
+      }
+      #section-dogs {
         background: lightgreen;
         border: 1px solid black;
-        float: right;
-        font-size: 30px;
-        width: 290px;
-        height: 200px;
+        font-size: 12px;
+        flex: 2;
+      }
+      #dog1 {
+        background: gold;
+        width: 100px;
+        height: 100px;
+      }
+      #section-cats {
+        background: lightgreen;
+        border: 1px solid black;
+        font-size: 12px;
+        flex: 2;
+      }
+      #cat1 {
+        background: gold;
+      }
+      h4 {
+        background: red;
+        border: 1px solid red;
+        border-radius: 1px;
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
+        padding: 20px;
+      }
+      p {
+        background: grey;
+        padding: 8px;
+
+
+      }
+      ol {
+        background: yellow;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 20px;
+
       }
       #footer {
         background: grey;
@@ -95,9 +112,7 @@
         clear: both;
         font-size: 50px;
         text-align: center;
-        margin-top: 100px;
-        width: 100%;
-        height: 10vh;
+        margin-top: 1000px;
       }
     </style>
   </head>
@@ -120,14 +135,33 @@
       </div>
       <!-- CONTENT AREA -->
       <div id="content_area">
+        <div id="dog1"><img src="../images/number1.png"</div>
+        <div id="cat1">Cat Photo</div>
         <div id="banner">Banner</div>
-        <div id="section-1">
-          <h4>Left section 1 Content</h2>
-          <p>random text in here</p>
-        </div>
-        <div id="section-2">
-          <h4>Left Section 2 Content</h4>
-          <p>random text in here</p>
+        <div id="animals">
+          <div id="section-dogs">
+            <h4>Dogs</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              </p>
+            <ol>
+              <li>No Litter Boxes!</li>
+              <li>Training Dogs is Easier</li>
+              <li>Dogs Can Protect You</li>
+              <li>Dogs Promote an Active Lifestyle</li>
+            </ol>
+          </div>
+            <div id="vs">VS</div>
+          <div id="section-cats">
+            <h4>Cats</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              </p>
+            <ol>
+              <li>They're cheaper.</li>
+              <li>They take up less space.</li>
+              <li>They live longer.</li>
+              <li>You don't have to walk them.</li>
+            </ol>
+          </div>
         </div>
       </div>
       <!-- Footer -->
