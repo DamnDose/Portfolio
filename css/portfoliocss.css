@@ -3,7 +3,7 @@ body {
   }
 
 header {
-  /* background-image: url("../images/giphyRed.gif"); */
+  background-image: url("../images/giphyRed.gif");
   background: lightblue;
   text-align: center;
   height: 10vh;
