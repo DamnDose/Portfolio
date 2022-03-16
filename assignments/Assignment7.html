@@ -4,21 +4,125 @@
     <meta charset="utf-8">
     <title>Assignment 7 - Div Only Layout</title>
         <style>
+
+body {
+            background: tan;
+            margin: 0;
+          }
+#container {
+            background: silver;
+            width: 600px;
+            margin: 0 auto;
+
+          }
+#header {
+            background-image: url("../images/giphyRed.gif")
+            no-repeat:
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid blue;
+          }
+#logo {
+  background: crimson;
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+
+}
+#top_info {
+            background: green;
+            border: 1px solid orange;
+            float: right;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+          }
+#navbar {
+      height: 20px;
+      clear: both;
+}
+#navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none
+}
+
+#navbar ul li {
+      float: left;
+      padding: 10px;
+
+}
+#navbar ul li a {
+      background: lightyellow;
+      border: 2px solid pink;
+      color: brown;
+      float: left;
+      font-size: 15px;
+      padding: 0 0 0 85px;
+
+}
+#navbar ul li a:hover  {
+            background: lightblue;
+}
+#banner {
+          background: purple;
+          height: 120px;
+          clear: both;
+          text-align: center;
+          font-size: 40px;
+}
+#left_col {
+  background: lightgreen;
+  border: 1px solid black;
+  float: left;
+  width: 290px;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+#right_col {
+  background: lightgreen;
+  border: 1px solid black;
+  float: right;
+  font-size: 30px;
+  width: 290px;
+  height: 200px;
+  text-align: center;
+
+}
+#footer {
+  background: grey;
+  border: 3px solid crimson;
+  clear: both;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+
+  background-image: url("../images/hand.webp");
+  background-repeat: no-repeat;
+  background-size: cover
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+}
         </style>
   </head>
   <body>
       <!-- CONTAINER -->
       <div id="container">
         <!-- HEADER -->
-        <div id="header">
+        <div id="header"> <h1 style="text-align: center;">This is the Header</h1>
               <div id="logo">Logo Here</div>
               <div id="top_info">Top Info</div>
             <div id="navbar">
                 <ul>
-                    <li><<a href="#">Link 1</a></li>
-                    <li><<a href="#">Link 2</a></li>
-                    <li><<a href="#">Link 3</a></li>
-                    <li><<a href="#">Link 4</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
                 </ul>
             </div>
         </div>
