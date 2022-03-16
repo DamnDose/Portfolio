@@ -6,6 +6,7 @@ header {
   /* background-image: url("../images/giphyRed.gif"); */
   background: lightblue;
   text-align: center;
+  height: 10vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,5 +38,5 @@ header {
   color: white;
 }
 .navbar ul li a:hover {
-    color: orange;
+    background: lightgreen;
 }
