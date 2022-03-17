@@ -13,16 +13,16 @@
   padding: 0 80px;
   margin: auto;
 }
+body {
+  background: #00113A;
+}
+
 
 /* my navbar styling starts here */
 .navbar {
-  /* background-image: url("../images/dnablue.gif"); */
-  background-color: crimson;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #241417;
   font-family: Ubuntu;
-  padding: 100px 0;
+  padding: 30px 0;
   position: fixed;
   width: 100%;
 }
@@ -36,6 +36,9 @@
   font-size: 35px;
   font-weight: 600;
 }
+.navbar .logo a span {
+  color: crimson;
+}
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -45,31 +48,38 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  transition: color 0.3s ease;
 }
+.navbar .menu li a:hover {
+  color: crimson;
+}
+/* Starting name section styling */
 
-/* Starting home section styling */
 
-.home {
+.name {
   display: flex;
-  background: url("#") no-repeat;
-  background-color: lightblue;
+  /* background: url("../images/dosegold.gif") no-repeat center; */
+  /* background: #4EC5D9; */
   height: 100vh;
   color: #fff;
-  min-height: 500px;
   font-family: Ubuntu;
 }
-.home .max-width {
+.name .max-width {
   margin: auto 0 auto 40px;
 }
-.home .home-content .text-1 {
+.name .name-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
+.name .name-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3 {
+.name .name-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
+}
+.name .name-content .text-3 span {
+  color: crimson;
+  font-weight: 500px;
 }

@@ -1,0 +1,113 @@
+  body {
+    background: linear-gradient(to right, darkblue, orange);
+  }
+  #container {
+    background: silver;
+    margin: 0 auto;
+  }
+  #header {
+    background: lightblue;
+    border-bottom: 1px solid blue;
+  }
+  #logo {
+    background: crimson;
+    text-align: center;
+  }
+  #top_info {
+    background: green;
+    border: 1px solid orange;
+    text-align: center;
+  }
+  #navLinks {
+    background: white;
+    }
+  #navLinks ul {
+    /* background: seagreen; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  #navLinks ul li {
+    background: lightgreen;
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 30px;
+    margin: 30px;
+    padding: 0px;
+  }
+  #navLinks ul li a:hover  {
+    background: lightblue;
+  }
+  #banner {
+    background: purple;
+    clear: both;
+    text-align: center;
+    font-size: 40px;
+  }
+  #dbzVS img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+  }
+  #vegeta img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    float: right;
+    width: 200px;
+  }
+  #goku img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    float: left;
+  }
+#section-V {
+  background: lightgreen;
+  border: 1px solid black;
+  font-size: 12px;
+  flex: 1;
+}
+
+#section-G {
+  background: lightgreen;
+  border: 1px solid black;
+  font-size: 12px;
+  flex: 1;
+}
+h4 {
+  background: orange;
+  border: 3px solid darkred;
+  border-radius: 1px;
+  color: darkred;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 60px;
+}
+p {
+  background: grey;
+  padding: 8px;
+
+
+}
+ol {
+  background: yellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+
+}
+#footer {
+  background: grey;
+  border: 3px solid crimson;
+  clear: both;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
