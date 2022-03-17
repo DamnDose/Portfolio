@@ -8,20 +8,11 @@
   box-sizing: border-box;
 }
 
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
 body {
   background: #00113A;
 }
 
-#dose img {
-  position: fixed;
-  top: 5px;
-  left: 20px;
-  margin-left: 20px;
+.navbar img {
   width: 230px;
   border: 3px solid #73AD21;
   z-index: 3;
@@ -29,18 +20,21 @@ body {
 
 
 /* my navbar styling starts here */
+.nav-max-width {
+  display: flex;
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
 .navbar {
   background: #241417;
   font-family: Ubuntu;
-  padding: 50px;
-  position: fixed;
+  padding: 10px;
+  position: sticky;
   width: 100%;
 }
-.navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .navbar .logo a {
   color: #fff;
   font-size: 35px;
@@ -76,8 +70,10 @@ body {
   color: #fff;
   font-family: Ubuntu;
 }
-.name .max-width {
-  margin: auto 0 auto 40px;
+.name-content {
+  position: fixed;
+  left: 200px;
+  bottom: 400px;
 }
 .name .name-content .text-1 {
   font-size: 27px;

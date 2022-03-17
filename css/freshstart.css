@@ -1,0 +1,58 @@
+body {
+  background: lightblue;
+}
+#container {
+  /* background: silver; */
+  margin: 0 auto;
+}
+#header {
+  background-image: url("../images/giphyRed.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid crimson;
+  border-bottom: 5px solid darkred;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+#header span {
+  color: red;
+}
+#logo {
+  background: crimson;
+  text-align: center;
+}
+#top_info {
+  background: green;
+  border: 1px solid orange;
+  text-align: center;
+}
+#navlinks {
+  font-size: 30px;
+  text-align: center;
+}
+#navlinks li {
+  display: inline-block;
+  text-align: right;
+  padding: 0 50px;
+}
+#navlinks li a {
+  color: white;
+  transition: color 0.5s ease;
+}
+#navlinks li a:hover {
+  color: crimson;
+}
+#banner {
+  background-image: url("../images/evilsmile.webp");
+  border: 3px solid red;
+  color: crimson;
+  display: inline-block;
+  font-size: 50px;
+  padding: 100px 75px 50px 75px;
+  text-align: center;
+  width: 80%;
+}
+#banner-container {
+  text-align: center;
+}
