@@ -17,12 +17,22 @@ body {
   background: #00113A;
 }
 
+#dose img {
+  position: fixed;
+  top: 5px;
+  left: 20px;
+  margin-left: 20px;
+  width: 230px;
+  border: 3px solid #73AD21;
+  z-index: 3;
+}
+
 
 /* my navbar styling starts here */
 .navbar {
   background: #241417;
   font-family: Ubuntu;
-  padding: 30px 0;
+  padding: 50px;
   position: fixed;
   width: 100%;
 }
@@ -35,6 +45,7 @@ body {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  margin-left: 60px;
 }
 .navbar .logo a span {
   color: crimson;
@@ -58,7 +69,8 @@ body {
 
 .name {
   display: flex;
-  /* background: url("../images/dosegold.gif") no-repeat center; */
+  background: url("../images/dose.png") no-repeat left;
+  background-position: 10% 28%;
   /* background: #4EC5D9; */
   height: 100vh;
   color: #fff;
