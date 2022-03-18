@@ -1,0 +1,27 @@
+        /* DBS Styles */
+
+body {
+  background: lightyellow;
+  }
+.navbar {
+    background: lightblue;
+  }
+.navbar li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 30px;
+  }
+.navbar li a {
+    border: 1px solid black;
+    color: white;
+    transition: color 0.3s ease;
+  }
+.navbar li a:hover {
+    color: crimson;
+  }
+  .logo img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
