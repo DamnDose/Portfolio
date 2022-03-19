@@ -16,6 +16,10 @@
 
 
   /* Navbar Styling */
+  .logo img {
+    width: 50%;
+    height: 50%;
+  }
 
 .portfolio p span {
   color: crimson;
@@ -49,6 +53,7 @@
   transition: 0.3s ease;
 }
 .navbar .menu li a:hover {
+  background-color: #ff6102;
   color: crimson;
 }
 
@@ -85,5 +90,5 @@
     background-size: cover;
     background-position: center;
     padding: 100px;
-    margin-top: 800px;
+    margin-top: 50px;
   }
