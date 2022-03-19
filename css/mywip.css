@@ -8,33 +8,38 @@
   box-sizing: border-box;
 }
 
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
 body {
   background: #00113A;
 }
 
+.navbar img {
+  width: 230px;
+  border: 3px solid #73AD21;
+  z-index: 3;
+}
+
 
 /* my navbar styling starts here */
+.nav-max-width {
+  display: flex;
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
 .navbar {
   background: #241417;
   font-family: Ubuntu;
-  padding: 30px 0;
-  position: fixed;
+  padding: 10px;
+  position: sticky;
   width: 100%;
 }
-.navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .navbar .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  margin-left: 60px;
 }
 .navbar .logo a span {
   color: crimson;
@@ -58,14 +63,17 @@ body {
 
 .name {
   display: flex;
-  /* background: url("../images/dosegold.gif") no-repeat center; */
+  background: url("../images/dose.png") no-repeat left;
+  background-position: 10% 28%;
   /* background: #4EC5D9; */
   height: 100vh;
   color: #fff;
   font-family: Ubuntu;
 }
-.name .max-width {
-  margin: auto 0 auto 40px;
+.name-content {
+  position: fixed;
+  left: 200px;
+  bottom: 400px;
 }
 .name .name-content .text-1 {
   font-size: 27px;
