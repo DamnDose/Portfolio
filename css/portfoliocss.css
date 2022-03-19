@@ -1,6 +1,7 @@
 /* --COLORS-- */
 /* orange #ff6102 */
 /* blue #01eaef */
+/* smoke #060709 */
 
 /* FONTS */
 /* Quicksand & Raleway */
@@ -11,6 +12,9 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+body {
+  background-color: #060709;
 }
 .max-width {
   max-width: 1900px;
@@ -35,6 +39,17 @@
   font-weight: 600;
   padding: 0px 0px 0px 50px;
 }
+.gallery p span {
+  color: #ff5f00;
+  }
+.gallery {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0px 0px 0px 50px;
+}
+
 .navbar {
   background: #01eaef;
   font-family: 'Quicksand', sans-serif;
@@ -59,16 +74,44 @@
   transition: 0.3s ease;
 }
 .navbar .menu li a:hover {
-  background-color: #ff6102;
+  background-color: gold;
   color: white;
   font-weight: 600;
 }
 .navbar .menu .active {
+  background-color: gold;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+.navbar .gall-menu {
+  padding-left: 500px;
+}
+.navbar .gall-menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .gall-menu li a {
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+.navbar .gall-menu li a:hover {
+  background-color: #ff6102;
+  color: white;
+  font-weight: 600;
+}
+.navbar .gall-menu .active {
   background-color: #ff6102;
   border-radius: 5px;
   color: white;
   font-weight: 600;
 }
+
+
+/* NAME STYLING */
+
 .name {
   display: flex;
   background: url("../images/dosepaint.png") no-repeat center;
@@ -94,6 +137,26 @@
 }
 .name .textline-3 span {
   color: gold;
+}
+
+/* GALLERY */
+
+.goodvibes img {
+  border: 2px solid #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.mywork img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+}
+.mywork img:hover {
+  border: 5px solid #5ced00;
 }
 
   /* FOOTER */
