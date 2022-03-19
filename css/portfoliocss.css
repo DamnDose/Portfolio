@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* --COLORS-- */
+/* orange #ff6102 */
+/* blue #01eaef */
+
+/* FONTS */
+/* Quicksand & Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -10,28 +16,28 @@
   max-width: 1900px;
   padding: 0px 0px 0px 0px;
 }
-/* --COLORS-- */
-/* orange #ff6102 */
-/* blue #01eaef */
-
 
   /* Navbar Styling */
+
+
   .logo img {
-    width: 50%;
+    width: 70%;
     height: 50%;
   }
 
 .portfolio p span {
-  color: crimson;
+  color: gold;
   }
 .portfolio {
-  color: #fff;
-  font-family: Ubuntu;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
   font-size: 50px;
+  font-weight: 600;
   padding: 0px 0px 0px 50px;
 }
 .navbar {
   background: #01eaef;
+  font-family: 'Quicksand', sans-serif;
   padding: 0px 0px 0px 0px;
   width: 100%;
 }
@@ -47,19 +53,26 @@
   display: inline-block;
 }
 .navbar .menu li a {
-  color: #fff;
+  color: black;
   font-size: 30px;
   margin: 20px;
   transition: 0.3s ease;
 }
 .navbar .menu li a:hover {
   background-color: #ff6102;
-  color: crimson;
+  color: white;
+  font-weight: 600;
 }
-
+.navbar .menu .active {
+  background-color: #ff6102;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
 .name {
   display: flex;
   background: url("../images/dosepaint.png") no-repeat center;
+  font-family: 'Raleway', sans-serif;
   height: 100vh;
   color: white;
   min-height: 500px;
@@ -80,7 +93,7 @@
   margin: 5px 0;
 }
 .name .textline-3 span {
-  color: crimson;
+  color: gold;
 }
 
   /* FOOTER */
