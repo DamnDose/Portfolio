@@ -4,7 +4,8 @@ body {
   background: lightyellow;
   }
 .navbar {
-    background: lightblue;
+  background: lightblue;
+  padding: 20px;
   }
 .navbar li {
     display: inline-block;
@@ -23,5 +24,21 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 200px;
   }
+.dose img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1000px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+}
+.text {
+  width: 20%;
+}

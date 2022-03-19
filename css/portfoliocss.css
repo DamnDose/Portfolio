@@ -1,42 +1,89 @@
-body {
-    background: lightyellow;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-header {
-  background-image: url("../images/giphyRed.gif");
-  background: lightblue;
-  text-align: center;
-  height: 10vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: blue;
-  padding: 1em 0;
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-.logo {
-  background: crimson;
+.max-width {
+  max-width: 1900px;
+  padding: 0px 0px 0px 0px;
+}
+/* --COLORS-- */
+/* orange #ff6102 */
+/* blue #01eaef */
+
+
+  /* Navbar Styling */
+
+.portfolio p span {
+  color: crimson;
+  }
+.portfolio {
   color: #fff;
-  display: inline-block;
-  float: left;
-  width: 10%;
-  height: 10vh;
+  font-family: Ubuntu;
+  font-size: 50px;
+  padding: 0px 0px 0px 50px;
 }
 .navbar {
-  background: lightblue;
+  background: #01eaef;
+  padding: 0px 0px 0px 0px;
   width: 100%;
 }
-.navbar ul li {
-  background: green;
-  border: 2px solid black;
-  margin: 10px;
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+}
+.navbar .menu {
+  padding-left: 500px;
+}
+.navbar .menu li {
+  list-style: none;
   display: inline-block;
-  float: right;
-  margin-left: auto;
 }
-.navbar ul li a {
+.navbar .menu li a {
+  color: #fff;
+  font-size: 30px;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+.name {
+  display: flex;
+  background: url("../images/dosepaint.png") no-repeat center;
+  height: 100vh;
   color: white;
+  min-height: 500px;
 }
-.navbar ul li a:hover {
-    background: lightgreen;
+.name .max-width {
+  margin: auto 0 auto 40px;
 }
+.name .textline-1 {
+  font-size: 27px;
+}
+.name .textline-2 {
+  font-size: 75px;
+  font-weigth: 600;
+  margin-lef: -3px
+}
+.name .textline-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.name .textline-3 span {
+  color: crimson;
+}
+
+  /* FOOTER */
+  .footer{
+    background: url("../images/water.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    margin-top: 800px;
+  }
