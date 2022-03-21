@@ -1,113 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>HTML Table Examples</title>
+    <title>HTML Tables Example</title>
     <style>
+      /* "Ugly" table CSS */
       #uglyTable,
       #uglyTable caption,
       #uglyTable th,
       #uglyTable td {
         border: 1px solid black;
         border-collapse: collapse;
-        border-radius: 5px;
-        padding: 10px;
+        padding: 12px;
       }
-      #ugleTable {
-        magrin-bottom: 48px;
+      #uglyTable {
+        margin-bottom: 48px;
       }
-      #uglyHeader {
-        background: green;
-      }
-      #uglyTableCol {
-        background-color: orange;
+      #uglyColSpan {
+        background: #F0F0FF;
       }
 
+      /* "Pretty" table CSS */
+      
       #prettyTable {
-        background-color: tan;
-        border: 1px solid green;
         border-collapse: collapse;
       }
-      #prettyHeader {
-        background-color: blue;
-        color: lightyellow;
-        padding: 10px;
-        font-family: Anton;
-      }
-      /* #prettyTable th {
+      #prettyTable th {
         padding-bottom: 12px;
         padding-right: 24px;
-      } */
+      }
       #prettyTable td {
-        padding-bottom: 4px 0;
+        padding: 4px 0;
       }
       #prettyTable tr:nth-child(even) {
-        background-color: lightgreen;
+        background-color: #F0F0F0;
       }
-
+      #prettyTable tr:hover {
+        background-color: #E0FFE0;
+      }
     </style>
   </head>
   <body>
-    <!-- Ugly Table -->
     <table id="uglyTable">
-      <caption>This is an ugle table</caption>
+      <caption>I am an ugly table</caption>
       <colgroup>
-        <col id="ugleTableCol" span="2">
-        <col>
+        <col id="uglyColSpan" span="2">
         <col>
         <col>
       </colgroup>
       <thead>
-        <tr id="uglyHeader">
-          <td>Nintendo</td>
-          <td>Playstation</td>
-          <td>Xbox</td>
-          <td>PC</td>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Least Favorite Food</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Super Smash Bros.</td>
-          <td>Doe</td>
-          <td>Panther</td>
-          <td>Steak</td>
+          <td>John</td>
+          <td>Smith</td>
+          <td>Dog</td>
+          <td>Fettuccine</td>
         </tr>
-        <tr>
-          <td>Victor</td>
-          <td>Van Dort</td>
-          <td>Butterfly</td>
-          <td>Fish</td>
-        </tr>
-        <tr>
-          <td>Victor</td>
-          <td>Van Dort</td>
-          <td>Butterfly</td>
-          <td>Fish</td>
-        </tr>
-        <tr>
-          <td>Victor</td>
-          <td>Van Dort</td>
-          <td>Butterfly</td>
-          <td>Fish</td>
-        </tr>
-      </tbody>
-    </table>
-    <br><br><br><br>
-    <hr>
-    <br><br><br><br>
-
-    <!-- Pretty Table -->
-
-    <table id="prettyTable">
-      <caption>This is a Pretty table</caption>
-      <thead>
-        <tr id="prettyHeader">
-          <td>Nintendo</td>
-          <td>Playstation</td>
-          <td>Xbox</td>
-          <td>PC</td>
-        </tr>
-      </thead>
-      <tbody>
         <tr>
           <td>Jane</td>
           <td>Doe</td>
@@ -121,10 +75,34 @@
           <td>Fish</td>
         </tr>
         <tr>
-          <td>Victor</td>
-          <td>Van Dort</td>
-          <td>Butterfly</td>
-          <td>Fish</td>
+          <td>Victoria</td>
+          <td>Everglot</td>
+          <td>Otter</td>
+          <td>Soup</td>
+        </tr>
+      </tbody>
+    </table>
+    <table id="prettyTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Least Favorite Food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Smith</td>
+          <td>Dog</td>
+          <td>Fettuccine</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>Panther</td>
+          <td>Steak</td>
         </tr>
         <tr>
           <td>Victor</td>
@@ -132,8 +110,13 @@
           <td>Butterfly</td>
           <td>Fish</td>
         </tr>
+        <tr>
+          <td>Victoria</td>
+          <td>Everglot</td>
+          <td>Otter</td>
+          <td>Soup</td>
+        </tr>
       </tbody>
     </table>
-
   </body>
 </html>

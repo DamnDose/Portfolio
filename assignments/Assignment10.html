@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 10 - Tables</title>
+    <style>
+      .bills {
+        background-color: lightblue;
+        width: 50%;
+      }
+      h1 {
+        background-color: green;
+        border: 2px solid gold;
+        color: gold;
+        padding: 5px 5px 5px 5px;
+        width: 45%;
+      }
+      #phone {
+        background-color: cyan;
+        color: black;
+      }
+      #gas {
+        background-color: lightyellow;
+        border: 2px solid gold;
+        color: black;
+      }
+      #food {
+        background-color: lightcyan;
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table class="bills">
+      <colgroup>
+        <col id="billsColSpan" span="2">
+        <col>
+        <col>
+      </colgroup>
+      <h1>Monthly Bills</h1>
+      <thead>
+        <th id="Bill">Bill</th>
+        <th>April</th>
+        <th>May</th>
+        <th>June</th>
+      </thead>
+      <tbody>
+        <tr class="phone-col">
+          <td id="phone">Phone</td>
+          <td>$120</td>
+          <td>$140</td>
+          <td>$140</td>
+        </tr>
+        <tr class="gas-col">
+          <td id="gas">Gas</td>
+          <td>$90</td>
+          <td>$100</td>
+          <td>$150</td>
+        </tr>
+        <tr class="food-col">
+          <td id="food">Food</td>
+          <td>$280</td>
+          <td>$280</td>
+          <td>$300</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

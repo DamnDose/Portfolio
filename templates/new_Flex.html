@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing Flex</title>
+    <style>
+      .flexChild {
+        background-color: lightgreen;
+        border: 2px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+        width: 50px;
+      }
+      .flexChildWide {
+        text-aligh: center;
+        width: 300px;
+      }
+      .flexChildTall {
+        height: 100px;
+      }
+      .flexChildGiant {
+        height: 200px;
+      }
+      .flexContainer {
+        background-color: tan;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Its Flex time!</h1>
+
+    <div class="flexContainer">
+      <div class="flexChild">A</div>
+      <div class="flexChild flexChildWide flexChildGiant">B</div>
+      <div class="flexChild">C</div>
+      <div class="flexChild flexChildWide">D</div>
+    </div>
+
+  </body>
+</html>
