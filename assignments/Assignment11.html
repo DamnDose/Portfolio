@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11 - Flexbox Containers</title>
+    <style>
+      .flexContainer_cars {
+        background-color: tan;
+        border: 2px solid black;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+      }
+      .chevy,
+      .dodge,
+      .ford,
+      .gmc {
+        border: 1px solid gold;
+        padding: 20px;
+        width: 25%;
+      }
+      .chevy {
+        background-color: dodgerblue;
+        color: white;
+      }
+      .dodge {
+        background-color: darkred;
+        color: white;
+      }
+      .ford {
+        background-color: darkblue;
+        color: white;
+      }
+      .gmc {
+        background-color: silver;
+        color: white;
+      }
+      .flexContainer_candy {
+        background-color: tan;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .reeses,
+      .mm,
+      .skittles,
+      .snickers {
+        border: 2px solid green;
+        padding: 20px;
+      }
+      .reeses {
+        background-color: orange;
+        flex: 4;
+        height: 50px;
+      }
+      .mm {
+        background-color: gold;
+        flex: 2;
+        height: 100px;
+
+      }
+      .skittles {
+        background-color: red;
+        height: 150px;
+        flex: 1;
+      }
+      .snickers {
+        background-color: #8B4513;
+        flex: 3;
+        height: 200px;
+      }
+      .flexContainer_anime {
+        background-color: tan;
+        border: 2px solid black;
+        display: flex;
+      }
+      .dragonball,
+      .bleech,
+      .initiald,
+      .baki {
+        border: 2px solid red;
+        padding: 20px;
+      }
+      .dragonball {
+        background-color: orange;
+      }
+      .flexContainer_colors {
+        background-color: tan;
+        border: 2px solid black;
+        display: flex;
+      }
+      .red,
+      .blue,
+      .green,
+      .yellow {
+        border: 2px solid red;
+        padding: 20px;
+        align-items: stretch;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer_cars">
+      <h2>This is using flex-direction: column</h2>
+      <div class="chevy">Chevy</div>
+      <div class="dodge">Dodge</div>
+      <div class="ford">Ford</div>
+      <div class="gmc">GMC</div>
+    </div>
+    <br><br><br><br>
+    <div class="flexContainer_candy">
+      <h2>This is using flex-wrap: wrap</h2>
+
+      <div class="reeses">Reese's Cups</div>
+      <div class="mm">M&M's</div>
+      <div class="skittles">Skittles</div>
+      <div class="snickers">Snickers</div>
+    </div>
+    <br><br><br><br>
+    <div class="flexContainer_anime">
+      <h2>This is using justify-content: center;</h2>
+
+      <div class="dragonball">Dragonball Super</div>
+      <div class="bleech">Bleech</div>
+      <div class="initiald">Initial D</div>
+      <div class="baki">Baki the Grappler</div>
+    </div>
+    <br><br><br><br>
+    <div class="flexContainer_colors">
+      <h2>This is using #.....</h2>
+
+      <div class="red">Red</div>
+      <div class="blue">Blue</div>
+      <div class="green">Green</div>
+      <div class="yellow">Yellow</div>
+    </div>
+    </body>
+</html>
