@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background-color: red;
+        /* grid-column: 1 / 4; */
+        grid-area: footer;
+      }
+      .block2 {
+        background-color: blue;
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+      }
+      .block3 {
+        background-color: green;
+      }
+      .block4 {
+        background-color: orange;
+        grid-area: header;
+      }
+      .block5 {
+        background-color: yellow;
+        grid-area: nav;
+      }
+      .block6 {
+        background-color: purple;
+      }
+      .block7 {
+        background-color: black;
+        color: white;
+      }
+      .myGrid {
+        display: grid;
+        /* GRID COLUMNS can repeat (#, repeating values)  */
+        grid-template-columns: 1fr 400px 1fr;
+        /* To fit content in Grid, use --- minmax(100px, auto) --- */
+        grid-auto-rows: minmax(100px, auto);
+        /* GAP values = Up/Down & Left/Right */
+        gap: 20px 10px;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "sidenav content content"
+        "sidenav content content"
+        "footer footer footer"
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="block block1">1</div>
+      <div class="block block2">Proident enim noster proident quem, quis laboris
+         o tamen
+        irure. Magna ita iudicem e cillum, cupidatat quis te
+        senserit fidelissimae. Commodo despicationes ita ullamco do
+        occaecat quid ullamco. Do probant ex singulis, aut elit
+        malis an nostrud hic sunt quibusdam ingeniis, ab quis
+        laborum illustriora.Est irure offendit, eiusmod quid in
+        deserunt distinguantur. Enim hic se labore laboris, offendit
+        tractavissent hic offendit, velit non ut veniam incurreret,
+        fore qui aliquip. Litteris in vidisse hic mandaremus elit
+        appellat consequat.
+      </div>
+      <div class="block block3">3</div>
+      <div class="block block4">4</div>
+      <div class="block block5">5</div>
+      <div class="block block6">6</div>
+      <div class="block block7">7</div>
+    </div>
+  </body>
+</html>
