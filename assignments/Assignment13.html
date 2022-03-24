@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 13 - Grids</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        /* colors used:
+        #
+        #
+        #
+        #
+        # */
+      }
+      .grid {
+        background-color: #ddd;
+        border: 2px solid yellow;
+        display: grid;
+        gap: 20px 20px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas:
+        "header header header header header"
+        "sidenav_L contentSection contentSection contentSection sidenav_R"
+        "sidenav_L contentSection contentSection contentSection sidenav_R"
+        "sidenav_L contentSection contentSection contentSection sidenav_R"
+        "footer footer footer footer footer"
+      }
+      .grid h1 {
+        color: yellow;
+        text-shadow: 2px 2px red;
+      }
+      .logo {
+        background-color: green;
+      }
+      .header {
+        /* background-color: yellow; */
+        background-image: url(../images/streetFighter/sfgrass.gif);
+        grid-area: header;
+        padding: 30px;
+      }
+      .sidenav_L {
+        background-color: lightgreen;
+        color: black;
+        grid-area: sidenav_L;
+        padding: 50px;
+        width: 300px;
+      }
+      .sidenav_R {
+        background-color: lightyellow;
+        color: black;
+        grid-area: sidenav_R;
+        padding: 50px;
+        width: 300px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .contentSection {
+        background-color: cyan;
+        grid-area: contentSection;
+      }
+      .contentSection p {
+        color: darkred;
+      }
+      .footer {
+        background-color: green;
+        color: white;
+        grid-area: footer;
+        padding: 30px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="logo">Logo Here
+      </div>
+      <div class="header"><img src="../images/dosegold.gif" alt="This is some logo">
+        <h1>Street Fighter II</h1>
+      </div>
+      <div class="sidenav_L">
+        <img src="../images/#" alt="sidenav BG picture">
+        <h3>Left sideNav</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="sidenav_R">
+        <h3>Right sideNav</h3>
+      </div>
+      <div class="contentSection">
+        <h2>Content images here</h2>
+        <p>
+          Cillum instituendarum commodo aute laboris, veniam ingeniis
+          familiaritatem. Sint non proident e deserunt consectetur hic
+          vidisse. Ea duis senserit deserunt.Cernantur anim
+          expetendis, consequat quem ullamco, occaecat ea multos
+          eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+          laboris illum, ab nostrud te singulis. Ingeniis export ita
+          doctrina voluptatibus hic officia o irure, eu nostrud
+          consectetur, nam iis enim dolor minim.
+        </p>
+      </div>
+      <div class="footer">Footer Here
+
+      </div>
+      <div class="sidenav_R">
+        <h3>Right sideNav</h3>
+      </div>
+    </div>
+
+  </body>
+</html>
