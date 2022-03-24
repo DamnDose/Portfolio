@@ -67,13 +67,23 @@
         display: flex;
         flex-direction: row;
       }
+      nav .fakeLink {
+        flex: 1;
+      }
       aside {
         display: flex;
         flex-direction: row;
-        height: 250px;
+        flex-wrap: wrap;
       }
+      aside .fakeLink {
+        flex-basis: 100%;
+      }
+      aside .fakeLink2 {
+        flex: 2;
+        padding: 40px
       }
 
+      }
     </style>
   </head>
   <body>
