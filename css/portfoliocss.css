@@ -136,13 +136,13 @@ body {
 /* ABOUT ME */
 
 .aboutme {
-  background-color: #ff6102;
+  background: url("../images/aboutme.png") no-repeat center;
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 100px;
-  width: 50%;
+  padding-bottom: 10px;
+  width: auto;
 }
 .aboutme img {
   border-radius: 4px;
@@ -157,7 +157,13 @@ body {
 }
 .aboutme p {
   color: white;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 10px;
+}
+.aboutme p span {
+  color: red;
+  font-family: Apple Chancery;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 /* GALLERY */
