@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Layout</title>
+    <style>
+      * {
+        background-color: #;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      <!-- DESKTOP -->
+      @media screen and (min-width: 800px) {
+        #header {
+          font-size: 36px;
+        }
+      }
+      <!-- TABLET -->
+      @media screen and (min-width: 480px) and (max-width: 799px) {
+        #header {
+          font-size: 24px;
+        }
+      }
+      <!-- MOBILE -->
+      @media screen and (max-width: 479px) {
+        #header {
+          font-size: 16px;
+        }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>HEADER</h1>
+    </div>
+    <div id="pc">
+      <h2>This is greater than 800px</h2>
+    </div>
+    <div id="tablet">
+      <h2>This is less than 800px and greater than 480px</h2>
+    </div>
+    <div id="mobile">
+      <h2>This is less than 480px</h2>
+    </div>
+    <div id="footer">
+      <h2>I disappear when the screen gets too small</h2>
+    </div>
+
+  </body>
+</html>
