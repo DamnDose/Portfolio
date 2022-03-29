@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transition Examples</title>
+    <style>
+      #transition {
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 0.5s;
+        transform-origin: left;
+      }
+      #transition:hover {
+        transform: scale(2);
+      }
+      #box {
+        background-color: orange;
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+      }
+      #box:hover {
+        background-color: green;
+        border-radius: 20%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="transition">Here is my transition text</h1>
+    <div id="box">
+
+    </div>
+  </body>
+</html>

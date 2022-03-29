@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <style>
+
+      /* Animation start = '@keyframes' */
+      @keyframes toRed {
+        0% {
+          color: black;
+        }
+        50% {
+          color: red;
+          border: 3px solid yellow;
+          text-align: center;
+        }
+        75% {
+          transform: translateX(500px) rotate(0deg);
+        }
+        100% {
+          color: black;
+        }
+      }
+      /* name of animation = 'toRed'# , time value = 1s (or infinite) */
+
+      #animation1 {
+        animation: toRed 3s infinite;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="animation1">This way ></h1>
+    <h2>> > > </h2>
+
+  </body>
+</html>

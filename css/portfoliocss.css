@@ -10,10 +10,11 @@
 body {
   background-color: #060709;
 }
-.max-width {
+
+/* .max-width {
   max-width: 1900px;
   padding: 0px 0px 0px 0px;
-}
+} */
 
   /* Navbar Styling */
 
@@ -48,14 +49,14 @@ body {
   background: #01eaef;
   font-family: 'Quicksand', sans-serif;
   padding: 0px 0px 0px 0px;
-  width: 100%;
+  /* width: 100%; */
 }
 .navbar .max-width {
   display: flex;
   align-items: center;
 }
 .navbar .menu {
-  padding-left: 500px;
+
 }
 .navbar .menu li {
   list-style: none;
@@ -194,4 +195,65 @@ body {
     background-position: center;
     padding: 100px;
     margin-top: 50px;
+  }
+
+  @media screen and (min-width: 800px) {
+    .portfolio {
+      color: red;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 100px;
+      font-weight: 600;
+      padding: 0 px 0px 0px 50px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 799px) {
+    body {
+      background-color: lightgreen;
+    }
+    .navbar {
+      background-color: orange;
+    }
+    .portfolio p span {
+      color: gold;
+      }
+    .portfolio {
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+      padding: 0px 0px 0px 50px;
+    }
+
+  }
+  @media screen and (min-width: 200px) and (max-width: 479px) {
+    body {
+      background-color: lightyellow;
+    }
+    .navbar {
+      background-color: darkred;
+    }
+    .menu {
+
+    }
+    .portfolio p span {
+      color: green;
+      }
+    .portfolio {
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+      padding: 0px 0px 0px 50px;
+    }
+    .max-width {
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar .menu li a {
+      color: white;
+      font-size: 30px;
+      margin: 20px;
+      transition: 0.3s ease;
+    }
+
   }
