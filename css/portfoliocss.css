@@ -11,15 +11,7 @@ body {
   background-color: #060709;
 }
 
-.grid .max-width {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
   /* Navbar Styling */
-
 
   .logo img {
     width: 250px;
@@ -52,15 +44,23 @@ body {
   font-family: 'Quicksand', sans-serif;
   padding: 0px 0px 0px 0px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
 .navbar .menu li {
   list-style: none;
 }
 .navbar .menu li a {
-  color: black;
-  font-size: 30px;
-  margin: 20px;
+  color: white;
+  font-size: 25px;
+  margin: 5px;
   transition: 0.3s ease;
 }
 .navbar .menu li a:hover {
@@ -74,9 +74,14 @@ body {
   color: white;
   font-weight: 600;
 }
+.navbar .gall-menu {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
 .navbar .gall-menu li {
   list-style: none;
-  display: inline-block;
 }
 .navbar .gall-menu li a {
   color: black;
@@ -100,14 +105,17 @@ body {
 /* NAME STYLING */
 
 .name {
-  background: url("../images/dosepaint.png") no-repeat center;
+  background-image: url("../images/dosepaint.png");
+  background-repeat: no-repeat;
+  background-position: right;
   font-family: 'Raleway', sans-serif;
   height: 100vh;
   width: 100vw;
   color: white;
+  padding: 10px;
 }
-.name .max-width {
-  margin: auto 0 auto 40px;
+.name-content {
+  padding: 50px 0px 0px 50px;
 }
 .name .textline-1 {
   font-size: 27px;
@@ -172,9 +180,11 @@ body {
   border-radius: 4px;
   padding: 5px;
   width: 250px;
+  transition-duration: 0.5s;
 }
 .mywork img:hover {
   border: 5px solid #ff5f00;
+  transform: scale(1.5);
 }
 
   /* FOOTER */
@@ -188,67 +198,6 @@ body {
   }
 
   @media screen and (min-width: 800px) {
-    body {
-      background-color: #060709;
-    }
-    /* NAME STYLING */
-
-    .navbar {
-      background-color: #;
-    }
-
-    .portfolio p span {
-      color: gold;
-      }
-    .portfolio {
-      color: black;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 50px;
-      font-weight: 600;
-      padding: 0px 0px 0px 50px;
-    }
-    .navbar .menu {
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .navbar .menu li a {
-      color: white;
-      font-size: 25px;
-      margin: 5px;
-      transition: 0.3s ease;
-    }
-    .name {
-      background-image: url("../images/dosepaint.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      font-family: 'Raleway', sans-serif;
-      height: 100vh;
-      width: 100vw;
-      color: white;
-      display: flex;
-      padding: 10px;
-    }
-    .name-content {
-      padding-top: 10px;
-    }
-    .name .textline-1 {
-      font-size: 27px;
-    }
-    .name .textline-2 {
-      font-size: 75px;
-      font-weigth: 600;
-      margin-lef: -3px
-    }
-    .name .textline-3 {
-      font-size: 40px;
-      margin: 5px 0;
-    }
-    .name .textline-3 span {
-      color: gold;
-    }
-
   }
   @media screen and (min-width: 480px) and (max-width: 799px) {
     body {
