@@ -15,7 +15,7 @@ body {
 
   .logo img {
     width: 250px;
-    padding: 10px
+    padding-left: 50px;
   }
 
 .portfolio p span {
@@ -50,7 +50,7 @@ body {
 }
 .navbar .menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,6 +62,7 @@ body {
   font-size: 25px;
   margin: 5px;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 .navbar .menu li a:hover {
   background-color: gold;
@@ -88,6 +89,8 @@ body {
   font-size: 30px;
   margin: 20px;
   transition: 0.3s ease;
+  text-decoration: none;
+
 }
 .navbar .gall-menu li a:hover {
   background-color: #ff6102;
