@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 14 - Forms</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel">
+    <style>
+      /* COLORS
+      #2223AB = dark blue
+      #6667FF = lighter blue
+      #4A4BF7 = light blue
+      #AB8F11 = gold
+      #FAD83B = yellow */
+
+      body {
+        background-color: #2223AB ;
+        font-family: 'Marvel', sans-serif;
+      }
+      body h1 {
+        background-color: lightyellow;
+        color: darkred;
+        text-align: center;
+      }
+      span {
+        color: red;
+      }
+      body h2 {
+        color: #FAD83B;
+        font-weight: bold;
+      }
+      p {
+        color: #AB8F11
+      }
+      .characterAbout {
+        background-color: #6667FF;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .characterClass {
+        background-color: #4A4BF7;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+      }
+      .costumeDesign {
+        background-color: #6667FF;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+      }
+      .superPowers {
+        background-color: #4A4BF7;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+      }
+      .submitForm {
+        background-color: #6667FF;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Heroes vs. <span>Villains</span></h1>
+
+      <h2>Hero or Villain</h2>
+      <p>Choose your Hero / Villain</p>
+      <div class="characterAbout">
+        <div>
+          <label for="NameInput">Hero / Villain name?</label>
+          <input type="text" id="NameInput" name="yourName">
+        </div>
+        <div>
+          <label for="birthplace">Birth place?</label>
+          <input type="text" id="birthplace" name="birth">
+        </div>
+        <div>
+          <label for="dateId">When you found your power?</label>
+          <input type="date" name="powerDate">
+        </div>
+        <div>
+          <label for="originStory">Your Origin story?</label>
+          <br>
+          <textarea name="origin" rows="5" cols="80"></textarea>
+        </div>
+      </div>
+
+      <h2>CHARACTER CLASS</h2>
+      <p>Choose your starting class.</p>
+      <div class="characterClass">
+        <div>
+          <input
+          type="radio"
+          id="tank"
+          name="classSpec">
+          <label for="characterClass">Tank</label>
+        </div>
+        <div>
+          <input
+          type="radio"
+          id="healer"
+          name="classSpec">
+          <label for="characterClass">Healer</label>
+        </div>
+        <div>
+          <input
+          type="radio"
+          id="dps"
+          name="classSpec">
+          <label for="characterClass">DPS</label>
+        </div>
+        <div>
+          <input
+          type="radio"
+          id="hybrid"
+          name="classSpec">
+          <label for="characterClass">Hybrid</label>
+        </div>
+      </div>
+
+      <h2>COSTUME DESIGNER</h2>
+      <p>Choose your costume.</p>
+      <div class="costumeDesign">
+        <div>
+          <input
+        type="checkbox"
+        id="capeCheckbox"
+        name="design">
+        <label for="capeCheckbox">Cape</label>
+        </div>
+        <div>
+          <input
+        type="checkbox"
+        id="maskCheckbox"
+        name="design">
+        <label for="maskCheckbox">Mask</label>
+        </div>
+        <div>
+          <input
+        type="checkbox"
+        id="cowlCheckbox"
+        name="design">
+        <label for="cowlCheckbox">Cowl</label>
+        </div>
+        <div>
+          <input
+        type="checkbox"
+        id="wingsCheckbox"
+        name="design">
+        <label for="wingsCheckbox">Wings</label>
+        </div>
+      </div>
+
+      <h2>CHOOSING YOUR POWERS</h2>
+      <div class="superPowers">
+        <label for="superPower">Choose your power?</label>
+        <select id="superPower" name="powers">
+          <option value="">--Select an option</option>
+          <option value="timeManipulation">Time Manipulation</option>
+          <option value="superStrength">Super Strength</option>
+          <option value="shapeshifting">Shapeshifting</option>
+          <option value="mindControl">Mind Control</option>
+          <option value="invisibility">Invisibility</option>
+          <option value="telekinesis">Telekinesis</option>
+          <option value="teleportation">Teleportation</option>
+          <option value="flight">Flight</option>
+          <option value="superSpeed">Super Speed</option>
+          <option value="gravityManipulation">Gravity Manipulation</option>
+          <option value="immortality">Immortality</option>
+        </select>
+      </div>
+
+      <h2>Start your journey?</h2>
+      <div class="submitForm">
+        <div>
+          <input type="reset" value="Decline...(WILL RESET FORM)">
+          <input type="submit" value="Ready for the world!">
+        </div>
+      </div>
+
+    </form>
+
+  </body>
+</html>
