@@ -5,67 +5,124 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel">
     <style>
       /* COLORS
-      #2223AB = dark blue
-      #6667FF = lighter blue
-      #4A4BF7 = light blue
-      #AB8F11 = gold
-      #FAD83B = yellow */
+      #7FFF00 Chartreuse */
 
       body {
-        background-color: #2223AB ;
-        font-family: 'Marvel', sans-serif;
+        background-image: url(../images/A14/bg4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       body h1 {
-        background-color: lightyellow;
-        color: darkred;
+        background-image: url(../images/A14/bg5.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        font-family: 'Marvel', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        padding: 50px;
         text-align: center;
       }
-      span {
+      h1 img {
+        width: 100px;
+        height: 100px
+      }
+      .blue {
+        color: white;
+        font-size: 53px;
+        text-shadow: 5px 5px 4px red;
+      }
+      .red {
         color: red;
+        font-size: 53px;
+        text-shadow: 5px 5px 4px white;
       }
       body h2 {
-        color: #FAD83B;
+        background-color: #101010;
+        color: lightyellow;
+        text-align: center;
+        text-shadow: 5px 5px 10px Chartreuse;
         font-weight: bold;
+        width: 450px;
       }
       p {
-        color: #AB8F11
+        color: lightyellow;
+        font-size: 20px;
+        font-weight: bold;
       }
+      textarea {
+        width: 350px;
+      }
+      .grid {
+        display: grid;
+      }
+
       .characterAbout {
-        background-color: #6667FF;
+        background-image: linear-gradient(palegreen, yellowgreen);
         border-radius: 5px;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
         padding: 10px;
+        width: 400px
       }
       .characterClass {
-        background-color: #4A4BF7;
+        background-image: linear-gradient(palegreen, yellowgreen);
         border-radius: 5px;
-        padding: 10px;
-        width: 300px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        width: 100px;
       }
       .costumeDesign {
-        background-color: #6667FF;
+        background-image: linear-gradient(palegreen, yellowgreen);
         border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
         padding: 10px;
         width: 300px;
       }
       .superPowers {
-        background-color: #4A4BF7;
+        background-image: linear-gradient(palegreen, yellowgreen);
         border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
         padding: 10px;
         width: 300px;
       }
       .submitForm {
-        background-color: #6667FF;
+        background-image: linear-gradient(palegreen, yellowgreen);
         border-radius: 5px;
         padding: 10px;
         width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .submitForm input {
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .submitForm input:nth-child(1) {
+        background-color: darkred;
+        color: gold;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <form>
-      <h1>Heroes vs. <span>Villains</span></h1>
+    <form class="grid">
+      <h1>
+        <span class="blue">Hero</span> or
+        <span class="red">Villain</span>
+      </h1>
 
-      <h2>Hero or Villain</h2>
+      <h2>SAVE OR CONQUER THE WORLD</h2>
       <p>Choose your Hero / Villain</p>
       <div class="characterAbout">
         <div>
@@ -121,7 +178,7 @@
       </div>
 
       <h2>COSTUME DESIGNER</h2>
-      <p>Choose your costume.</p>
+      <p>Choose your costume features.</p>
       <div class="costumeDesign">
         <div>
           <input
@@ -172,12 +229,10 @@
         </select>
       </div>
 
-      <h2>Start your journey?</h2>
+      <h2>Ready to start your journey?</h2>
       <div class="submitForm">
-        <div>
-          <input type="reset" value="Decline...(WILL RESET FORM)">
-          <input type="submit" value="Ready for the world!">
-        </div>
+        <input type="reset" value="Decline...(WILL RESET FORM)">
+        <input type="submit" value="Ready for the world!">
       </div>
 
     </form>
