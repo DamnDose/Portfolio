@@ -100,6 +100,8 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
       }
       .submitForm input {
         border-radius: 10px;
@@ -112,6 +114,11 @@
         margin-right: auto;
         padding: 10px;
         text-align: center;
+      }
+      fieldset {
+        border: 3px dashed yellowgreen;
+        text-align: center;
+        padding: 40px;
       }
     </style>
   </head>
@@ -127,6 +134,10 @@
       <div class="characterAbout">
         <div>
           <label for="NameInput">Hero / Villain name?</label>
+          <input type="text" id="NameInput" name="yourName">
+        </div>
+        <div>
+          <label for="NameInput">Birth name?</label>
           <input type="text" id="NameInput" name="yourName">
         </div>
         <div>
@@ -229,13 +240,23 @@
         </select>
       </div>
 
-      <h2>Ready to start your journey?</h2>
+      <!-- <h2>Ready to start your journey?</h2>
+      <div class="submitForm">
+        <input type="reset" value="Decline...(WILL RESET FORM)">
+        <input type="submit" value="Ready for the world!">
+      </div> -->
+
+    </form>
+
+    <fieldset>
+      <legend>
+        <h2>Ready to start your journey?</h2>
+      </legend>
       <div class="submitForm">
         <input type="reset" value="Decline...(WILL RESET FORM)">
         <input type="submit" value="Ready for the world!">
       </div>
-
-    </form>
+    </fieldset>
 
   </body>
 </html>
