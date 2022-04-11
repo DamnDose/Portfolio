@@ -14,11 +14,13 @@
 }
 body {
   background-image: url(../../images/rrMartin/bg1.jpg);
+  img {
+    width: 100%;
+  }
 }
 #grid {
   background-image: url(../../images/rrMartin/bg2.jpg);
-  /* background-color: red; */
-  width: 1150px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid black;
@@ -198,30 +200,28 @@ ol li {
 }
 @media screen and (max-width: 1000px) {
   #grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header"
-    "navbar"
-    "banner"
-    "topCol"
-    "leftCol"
-    "footer";
+    "header header"
+    "navbar navbar"
+    "banner banner"
+    "topCol topCol"
+    "leftCol blogCol"
+    "footer footer";
   }
 
   .header {
     background-color: #ddd;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    grid-area: header;
+    flex: 1;
   }
-  .header img {
-    width:
-  }
+
   .navbar ul {
     font-size: 13px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .topCol ol {
     display: flex;
