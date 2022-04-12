@@ -26,22 +26,23 @@ body {
   border: 3px solid black;
   display: grid;
   gap: 5px 5px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  ". header header header ."
-  ". navbar navbar navbar ."
-  ". banner banner banner ."
-  ". topCol topCol topCol ."
-  ". leftCol blogCol blogCol ."
-  ". leftCol blogCol blogCol ."
-  ". footer footer footer ."
+  "header"
+  "navbar"
+  "banner"
+  "topCol"
+  "sidebar"
+  "blog"
+  "footer"
 }
 .header {
-  background-color: #ddd;
-  border: 1px solid black;
+  border: 3px solid red;
+  display: flex;
+}
+.socialmedia {
   display: flex;
   flex-direction: row;
-  grid-area: header;
 }
 .navbar {
   background-image: url(../../images/rrMartin/#);
