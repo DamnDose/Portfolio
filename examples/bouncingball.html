@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Bouncing Ball Example</title>
+    <style>
+      #fence {
+        border: 5px dashed black;
+        height: 500px;
+        position: relative;
+        width: 600px;
+      }
+      #ball {
+        background-color: red;
+        border-radius: 50%;
+        height: 50px;
+        position: relative;
+        width: 50px;
+      }
+      #line1 {
+        background-color: black;
+        height: 100px;
+        margin-left: 20px;
+        width: 10px;
+      }
+      #line2 {
+        background-color: black;
+        height: 100px;
+        width: 10px;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fence">
+      <div id="ball">
+      </div>
+      <!-- <div id="line1"></div>
+      <div id="line2"></div> -->
+    </div>
+
+    <script type="text/javascript">
+      let ball = document.getElementById('ball');
+
+      let ballX = 0;
+      let ballY = 0;
+      let ballXVelocity = 2;
+      let ballYVelocity = 2;
+
+      function moveBall() {
+        ball.style.left = ballX + 'px';
+        ball.style.top = ballY + 'px';
+
+        // ballX = ballX + ballXVelocity;
+        ballX += ballXVelocity;
+        ballY += ballYVelocity;
+
+        if (ballX > 470 || ballX < 0) {
+          //ballXVelocity = ballXVelocity * -1;
+          ballXVelocity *= -1;
+        }
+        if (ballY > 470 || ballY < 0) {
+          ballYVelocity *= -1;
+        }
+      }
+      setInterval(moveBall, 10);
+      // let ball = document.getElementById('line1');
+      //
+      // let line1X = 0;
+      // let line1Y = 0;
+      // let line1XVelocity = 2;
+      // let line1YVelocity = 2;
+      //
+      // function moveLine1() {
+      //   line1.style.left = line1X + 'px';
+      //   line1.style.top = line1Y + 'px';
+      //
+      //   // ballX = ballX + ballXVelocity;
+      //   line1X += line1XVelocity;
+      //   line1Y += line1YVelocity;
+      //
+      //   if (line1X > 470 || ballX < 0) {
+      //     //ballXVelocity = ballXVelocity * -1;
+      //     line1XVelocity *= -1;
+      //   }
+      //   if (line1Y > 470 || ballY < 0) {
+      //     line1Velocity *= -1;
+      //   }
+      // setInterval(moveline1, 10);
+
+    </script>
+
+  </body>
+</html>

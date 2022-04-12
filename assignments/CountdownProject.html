@@ -3,40 +3,73 @@
   <head>
     <title>Graduation Countdown</title>
     <style>
+    body {
+      background-image: url();
+    }
+    #school {
+      background-color: #ddd;
+      border-radius: 30px;
+      color: #;
+      font-size: 40px;
+      text-align: center;
+    }
+    #timer div {
+      /* text-shadow: 5px 5px 10px Chartreuse; */
+      border-radius: 30px;
+      display: inline-block;
+      font-size: 40px;
+      margin: 10px;
+      padding: 10px;
+
+      text-shadow: 5px 5px 10px red;
+    }
+    #timer div:nth-child(odd) {
+      background-color: green;
+      color: #;
+    }
+    #timer div:nth-child(even) {
+      background-color: greenyellow;
+      color: #;
+    }
+
     </style>
   </head>
   <body>
-    <h1>The Day we have been waiting for :)</h1>
+      <div id="grid">
       <div id="school">
         <h1>Graduation Time</h1>
       </div>
 
-      <div class="jsTimer">
+      <div id="timer">
         <script type="text/javascript">
         let completion = new Date('July 22, 2022 16:30:00');
 
         function setCountdown() {
           let now = new Date();
-          let timeLeft = com.getTime() - now.getTime();
+          let timeLeft = completion.getTime() - now.getTime();
 
           let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
           let hours = Math.floor(
           (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
           );
-          var minutes = Math.floor(
+          let minutes = Math.floor(
           (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
         );
-          var seconds = Math.floor(
+          let seconds = Math.floor(
           (timeLeft % (1000 * 60)) / 1000
         );
 
           document.getElementById('timer').innerHTML =
-          days + ' days ' + hours + ' hours ' + minutes + ' minutes '
-          + seconds + ' seconds ';
-        };
-
+          '<div>' + days + '<span> Days</span></div>' +
+          '<div>' + hours + '<span> Hours</span></div>' +
+          '<div>' + minutes + '<span> Minutes</span></div>' +
+          '<div>' + seconds + '<span> Seconds</span></div>';
+        }
         setInterval(setCountdown, 1000);
         </script>
+      </div>
+      <div class="ithasbegun">
+        <img src="../images/randoms/mkmovie.gif" alt="Mortal Kombat Shang Tsung">
       </div>
 
 

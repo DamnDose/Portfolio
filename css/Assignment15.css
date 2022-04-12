@@ -1,0 +1,38 @@
+body {
+  background-image: url(https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?cs=srgb&dl=pexels-sebastian-palomino-1955134.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slideshow {
+  height: 400px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 5px 5px 10px orange;
+}
+.slideshowImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 50%;
+  height: 100%;
+}
+input {
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  width: 20%;
+}
+#next {
+  background-color: green;
+}
+#previous {
+  background-color: orange;
+  margin-top: 100px;
+}

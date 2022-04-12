@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 15 - Javascript Slideshow</title>
+    <link rel="stylesheet" href="../css/Assignment15.css">
+  </head>
+  <body>
+        <h1>My coding slideshow of cars :)</h1>
+      <div id="slideshow">
+        <img class="slideshowImage" id="slide1" src="../images/randoms/carred.jpeg" />
+        <img class="slideshowImage" id="slide2" src="../images/randoms/carblue.jpeg" />
+        <img class="slideshowImage" id="slide3" src="../images/randoms/cargreen.jpeg" />
+        <img class="slideshowImage" id="slide4" src="../images/randoms/carblack.jpeg" />
+      </div>
+
+      <input
+      type="button"
+      id="previous"
+      value="Previous"
+      onclick="showPreviousSlide()"
+      >
+      <input
+      type="button"
+      id="next"
+      value="Next"
+      onclick="showNextSlide()"
+      >
+
+    <script type="text/javascript" src="../js/slideshow.js"></script>
+  </body>
+</html>
