@@ -5,27 +5,44 @@
     <link rel="stylesheet" href="../css/Assignment15.css">
   </head>
   <body>
-        <h1>My coding slideshow of cars :)</h1>
-      <div id="slideshow">
-        <img class="slideshowImage" id="slide1" src="../images/randoms/carred.jpeg" />
-        <img class="slideshowImage" id="slide2" src="../images/randoms/carblue.jpeg" />
-        <img class="slideshowImage" id="slide3" src="../images/randoms/cargreen.jpeg" />
-        <img class="slideshowImage" id="slide4" src="../images/randoms/carblack.jpeg" />
+    <h1>The Original Game Spot</h1>
+    <div id="slideContainer">
+      <div class="mySlides">
+        <div class="slidetext">1 / 4</div>
+        <img src="../images/randoms/arcade1.jpg"
+        style="width:100%">
+        <div class="text">Welcome to the Arcade.</div>
+      </div>
+      <div class="mySlides">
+        <div class="slidetext">2 / 4</div>
+        <img src="../images/randoms/arcade2.jpg"
+        style="width:100%">
+        <div class="text">Get your roll on with Ski-ball.</div>
+      </div>
+      <div class="mySlides">
+        <div class="slidetext">3 / 4</div>
+        <img src="../images/randoms/arcade3.jpg"
+        style="width:100%">
+        <div class="text">Shoot some hoops.</div>
+      </div>
+      <div class="mySlides">
+        <div class="slidetext">4 / 4</div>
+        <img src="../images/randoms/arcade4.jpg"
+        style="width:100%">
+        <div class="text">When out of tokens.</div>
       </div>
 
-      <input
-      type="button"
-      id="previous"
-      value="Previous"
-      onclick="showPreviousSlide()"
-      >
-      <input
-      type="button"
-      id="next"
-      value="Next"
-      onclick="showNextSlide()"
-      >
-
-    <script type="text/javascript" src="../js/slideshow.js"></script>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="../js/Assignment15.js"></script>
   </body>
 </html>

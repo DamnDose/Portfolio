@@ -1,35 +1,26 @@
-let currentSlideIndex = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlide() {
-  // debugger;
-  let slide1 = document.getElementById('slide1');
-  let slide2 = document.getElementById('slide2');
-  let slide3 = document.getElementById('slide3');
-  let slide4 = document.getElementById('slide4');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  let slides = [slide1, slide2, slide3, slide4];
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  if (currentSlideIndex >= slides.length) {
-    currentSlideIndex = 0;
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-
-  for (let i = 0; i < slides.length; i++) {
-    let loopSlide = slides[i];
-    if (i != currentSlideIndex) {
-      loopSlide.style.display = 'none';
-    } else {
-      loopSlide.style.display = 'block';
-    }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
-
-function showNextSlide() {
-  currentSlideIndex += 1;
-  showSlide();
-}
-function showPreviousSlide() {
-  currentSlideIndex += 1;
-  showSlide();
-}
-
-showSlide();
