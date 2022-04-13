@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 50px;
+        text-align: center;
+      }
+      .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #red, 0 0 20px #red, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        to {
+          text-shadow: 0 0 20px green, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+      #popupContainer {
+        height: 100vw;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+
+      }
+
+      #popupBG {
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+      }
+      #popup {
+        background-color: #ddd;
+        border: 3px solid black;
+        border-radius: 25px;
+        font-size: 25px;
+        padding: 25px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+      }
+      #popup .closePopup {
+        margin-top: 36px;
+        background-color: green;
+        border: 1px solid black;
+        border-radius: 20%;
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+    </p>
+    <div class="popupTrigger">Click Here for a popup! :)
+    </div>
+
+    <div id="popupContainer">
+      <div id="popupBG" class="closePopup"></div>
+      <div id="popup">
+        <div class="glow">Congrats! You opened a popup!</div>
+        <div class="closePopup">Close</div>
+      </div>
+
+    </div>
+
+    <script>
+      $('.popupTrigger').click(
+        function() {
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+      $('.closePopup').click(
+        function() {
+          $('#popupContainer').removeClass('popupOpen');
+        }
+      );
+    </script>
+
+  </body>
+</html>

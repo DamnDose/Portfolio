@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+      }
+      nav,
+      .navLink {
+        background-color: MediumSeaGreen;
+      }
+      .navLink {
+        color: white;
+        flex: 1;
+        position: relative;
+      }
+      .mainLink {
+        background-color: SeaGreen;
+      }
+      .mainLink:hover {
+        background-color: lightgreen;
+      }
+      .mainLink,
+      .dropdown {
+        padding: 12px;
+      }
+      .dropdown {
+        background-color: lightblue;
+        display: none;
+        position: absolute;
+        width: 100%;
+      }
+      .dropdown div {
+        display: block;
+        margin-bottom: 12px;
+      }
+      .dropdown div:hover {
+        background-color: orange;
+        color: black;
+        display: inline-block;
+      }
+      .navLink.dropdownOpen .dropdown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navLink">
+        <div class="mainLink">Home</div>
+      </div>
+      <div class="navLink hoverDropdown">
+        <div class="mainLink">Portfolio</div>
+        <div class="dropdown">
+          <div>Portraits</div>
+          <div>Landscapes</div>
+          <div>Modeling</div>
+          <div>Events</div>
+        </div>
+      </div>
+      <div class="navLink hoverDropdown">
+        <div class="mainLink">Portfolio</div>
+        <div class="dropdown">
+          <div>#</div>
+          <div>#</div>
+          <div>#</div>
+          <div>#</div>
+        </div>
+      </div>
+      <div class="navLink clickDropdown">
+        <div class="mainLink">Projects</div>
+        <div class="dropdown">
+          <div>Photoshop</div>
+          <div>Illustrator</div>
+          <div>After Effects</div>
+          <div>Programing</div>
+          <div>Websites</div>
+        </div>
+      </div>
+      <div class="navLink">
+        <div class="mainLink">Other Links</div>
+      </div>
+
+
+    </nav>
+
+    <script type="text/javascript">
+      $('.hoverDropdown').hover(
+        function() {
+          debugger;
+          $(this).addClass('dropdownOpen');
+        },
+        function() {
+          $(this).removeClass('dropdownOpen')
+        }
+      );
+
+      $('.clickDropdown').click(
+      function() {
+        if ($(this).hasClass('dropdownOpen')) {
+          $(this).removeClass('dropdownOpen');
+        } else {
+          $(this).addClass('dropdownOpen');
+        }
+      }
+    );
+
+    $('body').click(
+    function() {
+      if ($('.clickDropdown').hasClass('dropdownOpen')) {
+        $('.clickDropdown').removeClass('dropdownOpen');
+      }
+    }
+    )
+
+    </script>
+  </body>
+</html>
