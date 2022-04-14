@@ -2,47 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montaga', serif;
   list-style-type: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 799px) {
-
-}
-@media screen and (min-width: 800px) {
-
-}
-body {
-  background-image: url(../../images/rrMartin/bg1.jpg);
-  img {
-    width: 100%;
-  }
-}
 #grid {
   background-image: url(../../images/rrMartin/bg2.jpg);
-  width: 100%;
+  border: 3px solid black;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid black;
+  /* width: 100%; */
   display: grid;
   gap: 5px 5px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr, 1fr;
   grid-template-areas:
-  "header"
-  "navbar"
-  "banner"
-  "topCol"
-  "sidebar"
-  "blog"
-  "footer"
+  "header header"
+  "navbar navbar"
+  "banner banner"
+  "topCol topCol"
+  "leftCol blogCol"
+  "leftCol blogColl"
+  "footer footer"
 }
 .header {
-  border: 3px solid red;
-  display: flex;
-}
-.socialmedia {
+  background-color: #ddd;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
+  grid-area: header;
 }
 .navbar {
   background-image: url(../../images/rrMartin/#);
@@ -70,67 +56,67 @@ body {
   background-color: #ddd;
   color: black;
 }
-.banner {
-  background-image: url(../../images/rrMartin/banner1.jpeg);
-  background-repeat: no-repeat;
-  background-size: 1000px auto;
-  border: 3px solid dimgrey;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
+.bSlides {
+  /* display: none; */
+}
+.banner-container {
   grid-area: banner;
-  height: 304px;
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
 }
-.banner ol {
-  display: flex;
-  flex-direction: row;
+.banner-container img {
+  vertical-align: middle;
 }
-.banner ol a:hover {
-  background-color: darkgrey;
+
+.prev, .next {
+  border-radius: 0 3px 3px 0;
   color: white;
+  cursor: pointer;
+  margin-top: -22px;
+  padding: 16px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  top: 50%;
+  transition: 0.6s ease;
+  width: auto;
+  user-select: none;
 }
-.banner li {
-  background-color: grey;
-  border: 1px solid black;
-  margin: 2px;
-  padding: 1.5px;
+.next {
+  border-radius: 3px 0 0 3px;
+  right: 0;
 }
-.banner li a {
-  color: darkgrey;
-  text-decoration: none;
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.active, .dot:hover {
+  background-color: #717171;
 }
 .topCol {
-  grid-area: topCol;
-}
-.topCol img {
-  border: 3px solid dimgrey;
-  border-radius: 3px;
-}
-.topCol ol {
   display: flex;
-}
-ol li {
-  list-style-position: outside;
-}
-.topCol li a{
-  text-decoration: none;
+  flex-direction: row;
+  grid-area: topCol;
+  height: 100%;
+  position: relative;
+  justify-content: center;
 }
 .leftCol {
   border: 4px solid dimgrey;
   border-radius: 3px;
   grid-area: leftCol;
+  height: 100%;
 }
 .block1 {
   background-image: url(../../images/rrMartin/leftcol1.jpeg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  text-align: center;
-  padding: 6px 6px 2px 9px;
-  width: 311px;
+  margin: 3px;
 }
 .block1 span {
-  color: gold;
+  color: yellow;
   font-weight: bold;
 }
 .block1 p a {
@@ -143,40 +129,26 @@ ol li {
   background-image: url(../../images/rrMartin/leftcol2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  height: 246px;
-  text-align: center;
-  padding: 6px 6px 2px 9px;
-  width: 311px;
+  background-size: cover;
+  color: white  padding: 15px;
+  margin: 3px;
 }
-.block3 {
-  padding: 2px 0 2px 10px;
-}
-.block3 img {
-  width: 311px;
-  height: 400px;
-}
-
+.block3,
 .block4,
 .block5 {
-  padding: 2px 0 2px 10px;
+  background-color: #00008b;
+  padding: 3px;
+  margin: 3px;
 }
 .blogCol {
-  background-color: #DCDCDC;
+  background-color: #FFFFF0;
   border: 4px solid dimgrey;
   border-radius: 3px;
-  font-family: 'Montaga', serif;
   padding: 0px 0px 0px 0px;
-  grid-column-start: span 2;
+  grid-area: blogCol;
 
 }
-.blogCol span {
-  color: black;
-}
 .blogCol h2 {
-  color: #1c4268;
-  font-family: 'Montaga', serif;
-  font-weight: bold;
   padding: 30px 0px 0px 30px;
 }
 .blogCol li a {
@@ -187,9 +159,6 @@ ol li {
 .row {
   padding-left: 30px;
 }
-.notablog {
-  padding: 0px 0px 40px 20px;
-}
 .footer {
   background-image: url(../../images/rrMartin/footer-bg.jpeg);
   background-position: center;
@@ -198,35 +167,4 @@ ol li {
   grid-area: footer;
   padding: 50px;
   text-align: center;
-}
-@media screen and (max-width: 1000px) {
-  #grid {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "header header"
-    "navbar navbar"
-    "banner banner"
-    "topCol topCol"
-    "leftCol blogCol"
-    "footer footer";
-  }
-
-  .header {
-    background-color: #ddd;
-    border: 1px solid black;
-    flex: 1;
-  }
-
-  .navbar ul {
-    font-size: 13px;
-    display: flex;
-    flex-direction: row;
-  }
-  .topCol ol {
-    display: flex;
-    flex-direction: column;
-  }
-
 }
