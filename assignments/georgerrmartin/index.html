@@ -6,19 +6,22 @@
   </head>
   <body>
     <div id="grid">
-      <div class="header">
+      <header>
+      <div class="topheader">
         <img src="../../images/rrMartin/shield.jpeg" style="width:10%">
         <img src="../../images/rrMartin/rrHeader.jpeg" style="width:100%" alt="RR Martin">
-
-        <form class="searchbar">
-          <img src="../../images/rrMartin/headerFB.jpeg" style="width:30%" alt="Facebook">
-          <img src="../../images/rrMartin/headerT.jpeg" style="width:30%" alt="Twitter">
-          <img src="../../images/rrMartin/headerC.jpeg" style="width:30%" alt="Crown">
-          <input type="search" id="grrmSearch" name="grrmSearch">
-          <input type="button" value="SEARCH">
-        </form>
       </div>
-      <div class="navbar">
+      <div class="social">
+          <form class="searchbar">
+            <img src="../../images/rrMartin/headerFB.jpeg" style="width:10%" alt="Facebook">
+            <img src="../../images/rrMartin/headerT.jpeg" style="width:10%" alt="Twitter">
+            <img src="../../images/rrMartin/headerC.jpeg" style="width:10%" alt="Crown">
+            <input type="search" id="grrmSearch" name="grrmSearch">
+            <input type="button" value="SEARCH">
+          </form>
+      </div>
+      </header>
+      <nav class="navbar col">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Not a blog</a></li>
@@ -28,7 +31,7 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Merchandise</a></li>
         </ul>
-      </div>
+      </nav>
         <div class="banner-container">
           <div class="bSlides fade">
             <div class="slidetext">1 / 5</div>
@@ -60,7 +63,7 @@
           <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
 
-        <div class="topCol">
+        <div class="topCol col">
             <a href="#"><img src="../../images/rrMartin/topcol1.jpeg"
             style="width:100%"></a>
             <a href="#"><img src="../../images/rrMartin/topcol2.png"
@@ -68,7 +71,7 @@
             <a href="#"><img src="../../images/rrMartin/topcol3.jpeg"
             style="width:100%"></a>
         </div>
-        <div class="leftCol">
+        <aside class="leftCol col">
           <div class="block1">
             <h4>NEXT APPEARANCE</h4>
             <p>
@@ -97,17 +100,15 @@
           <div class="block5">
             <a href="#"><img src="../../images/rrMartin/leftcol5.jpeg" style="width:100%" alt="Stagecoach"></a>
           </div>
-        </div>
-        <div class="blogCol">
+        </aside>
+        <main class="blogCol col">
           <ul>
             <h2>CURRENT GRRM BLOG POST
-              <!-- <img src="../images/rrMartin/current-blogs.png" alt="Current GRRM Blog Post"> -->
+              <!-- <img src="../images/rrMartin/current-blogs.png" style="width:100%" alt="Current GRRM Blog Post"> -->
             </h2>
-            <br><br><br>
             <div class="row row-1">
               <li><a href="https://georgerrmartin.com/notablog/2022/03/30/the-dragons-are-coming-2/" alt="The Dragons Are Coming">The Dragons Are Coming…</a>
               </li>
-              <br>
               <p>… they’re on the wing, and will be arriving in August.
                 Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
                 <li>
@@ -116,7 +117,6 @@
                 </li>
               </p>
             </div>
-            <br><br>
             <div class="row row-2"><li><a href="https://georgerrmartin.com/notablog/2022/03/17/the-rise-of-the-dragon/" alt="THE RISE OF THE DRAGON">THE RISE OF THE DRAGON</a></li>
               <br>
               <p>We’re so excited to announce The Rise of The Dragon, a lavish
@@ -129,7 +129,6 @@
                 </li>
               </p>
             </div>
-            <br><br>
             <div class="row row-3"><li><a href="https://georgerrmartin.com/notablog/2022/03/15/dealer-takes-two/" alt="Dealer Takes Two">Dealer Takes Two</a></li>
               <br>
               <p>Kings and deuces may not be as iconic… or ominous… a poker hand
@@ -141,9 +140,7 @@
                  </li>
               </p>
             </div>
-            <br><br>
             <div class="row row-4"><li><a href="https://georgerrmartin.com/notablog/2022/03/09/random-updates-and-bits-o-news/" alt="Random Updates and Bits o’ News">Random Updates and Bits o’ News</a></li>
-              <br>
               <p>I look around, and I don’t know where 2021 went.   I blinked
                 and it was gone.   Not a year that I am going to mourn much,
                 any more than 2020.  A global pandemic, so many deaths
@@ -196,7 +193,7 @@
             <br><br>
             <div class="notablog"><a href="#"><img src="../../images/rrMartin/notablog.png" style="width:30%" alt="Not a Blog"></a>
             </div>
-        </div>
+        </main>
         <div class="footer">2022 GEORGE R.R. MARTIN.. ALL RIGHTS RESERVED.
         </div>
     </div>

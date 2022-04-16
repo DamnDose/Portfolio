@@ -16,9 +16,6 @@ h1 {
   text-shadow: 5px 5px 10px orange;
   text-align: center;
 }
-img {
-  vertical-align: middle;
-}
 #slideContainer {
   max-width: 600px;
   position: relative;

@@ -10,7 +10,7 @@
   border: 3px solid black;
   margin-left: auto;
   margin-right: auto;
-  /* width: 100%; */
+  width: 100%;
   display: grid;
   gap: 5px 5px;
   grid-template-columns: 1fr, 1fr;
@@ -167,4 +167,36 @@
   grid-area: footer;
   padding: 50px;
   text-align: center;
+}
+
+@media screen and (min-width: 476px) and (max-width: 799px) {
+  #grid {
+    background-image: url(../../images/rrMartin/bg2.jpg);
+    border: 3px solid red;
+    width: 100%;
+    display: grid;
+    gap: 5px 5px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "banner"
+    "topCol"
+    "blogCol"
+    "leftCol"
+    "footer"
+  }
+  .topheader {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
 }
