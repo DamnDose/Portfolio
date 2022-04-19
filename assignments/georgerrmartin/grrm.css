@@ -15,9 +15,9 @@
   gap: 5px 5px;
   grid-template-columns: 1fr, 1fr;
   grid-template-areas:
-  "toptop toptop"
+  "topH topH"
   "navbar navbar"
-  "banner-container banner-container"
+  "banner banner"
   "topCol topCol"
   "leftCol blogCol"
   "leftCol blogCol"
@@ -30,7 +30,6 @@
   background-color: navy;
 }
 .navbar {
-  background-image: url(../../images/rrMartin/#);
   grid-area: navbar;
   padding: 5px;
 }
@@ -52,11 +51,9 @@
   transition: 0.3s ease;
 }
 .navbar li a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.bSlides {
-  /* display: none; */
+  background-color: dimgrey;
+  color: white;
+  padding: 5px;
 }
 .banner-container {
   grid-area: banner;
@@ -129,15 +126,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white  padding: 15px;
+  color: #fff;
+  padding: 15px;
   margin: 3px;
 }
 .block3,
 .block4,
 .block5 {
-  background-color: #00008b;
   padding: 3px;
-  margin: 3px;
+  margin: 1px;
 }
 .blogCol {
   background-color: #FFFFF0;
@@ -172,37 +169,55 @@
   #grid {
     background-image: url(../../images/rrMartin/bg2.jpg);
     border: 3px solid red;
-    width: 100%;
     display: grid;
     gap: 5px 5px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "header"
+    "topH"
     "navbar"
-    "banner-container"
+    "banner"
     "topCol"
-    "main"
-    "aside"
+    "blogCol"
+    "leftCol"
     "footer"
   }
   .topheader {
     display: flex;
-    flex-direction: row;
-    width: 85%;
+    flex-grow: row;
+    width: 20%;
   }
   .social {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
-  ul {
+  .navbar ul {
+    font-size: 25px;
     display: flex;
     flex-direction: column;
+  }
+  .banner-container {
+    padding-right: 250px;
+    width: 90%;
   }
   .col {
+    width: 450px;
+  }
+  .topCol {
     display: flex;
     flex-direction: column;
   }
+  .block1 {
+    height: 200px;
+    padding: 30px 0px 0px 30px;
+  }
+  .block2 {
+    height: 200px;
+    padding: 30px 0px 0px 30px;
+  }
+  .foot {
+    padding: 40px;
+  }
+
 }
