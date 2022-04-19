@@ -5,32 +5,43 @@
   list-style-type: none;
 }
 
+/* @media screen and (min-width: 480px) and (max-width: 799px) {
+
+}
+@media screen and (min-width: 800px) {
+
+} */
+body {
+  background-image: url(../images/rrMartin/bg1.jpg);
+}
 #grid {
-  background-image: url(../../images/rrMartin/bg2.jpg);
-  border: 3px solid black;
+  background-image: url(../images/rrMartin/bg2.jpg);
+  width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  border: 3px solid black;
   display: grid;
   gap: 5px 5px;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
-  "toptop toptop"
+  "top top"
   "navbar navbar"
-  "banner-container banner-container"
+  "banner banner"
   "topCol topCol"
   "leftCol blogCol"
-  "leftCol blogCol"
+  "leftCol blogCol "
   "foot foot"
 }
-#grrmSearch {
-  background-color: #;
-}
-#buttonS {
-  background-color: navy;
+.top {
+  background-color: #ddd;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  grid-area: top;
 }
 .navbar {
-  background-image: url(../../images/rrMartin/#);
+  background-image: url(../images/rrMartin/#);
   grid-area: navbar;
   padding: 5px;
 }
@@ -55,63 +66,65 @@
   background-color: #ddd;
   color: black;
 }
-.bSlides {
-  /* display: none; */
-}
-.banner-container {
+.banner {
+  background-image: url(../images/rrMartin/banner1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  border: 3px solid dimgrey;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
   grid-area: banner;
-  margin: auto;
-  max-width: 1000px;
-  position: relative;
+  width: 958px;
+  height: 304px;
 }
-.banner-container img {
-  vertical-align: middle;
-}
-
-.prev, .next {
-  border-radius: 0 3px 3px 0;
-  color: white;
-  cursor: pointer;
-  margin-top: -22px;
-  padding: 16px;
-  position: absolute;
-  font-weight: bold;
-  font-size: 18px;
-  top: 50%;
-  transition: 0.6s ease;
-  width: auto;
-  user-select: none;
-}
-.next {
-  border-radius: 3px 0 0 3px;
-  right: 0;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-.topCol {
+.banner ol {
   display: flex;
   flex-direction: row;
+}
+.banner ol a:hover {
+  background-color: darkgrey;
+  color: white;
+}
+.banner li {
+  background-color: grey;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 1.5px;
+}
+.banner li a {
+  color: darkgrey;
+  text-decoration: none;
+}
+.topCol {
   grid-area: topCol;
-  height: 100%;
-  position: relative;
-  justify-content: center;
+}
+.topCol img {
+  border: 3px solid dimgrey;
+  border-radius: 3px;
+  width: 100%;
+}
+.topCol ol {
+  display: flex;
+}
+ol li {
+  list-style-position: outside;
+}
+.topCol li a{
+  text-decoration: none;
 }
 .leftCol {
   border: 4px solid dimgrey;
   border-radius: 3px;
   grid-area: leftCol;
-  height: 100%;
 }
 .block1 {
-  background-image: url(../../images/rrMartin/leftcol1.jpeg);
+  background-image: url(../images/rrMartin/leftcol1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  padding: 15px;
   margin: 3px;
 }
 .block1 span {
@@ -125,7 +138,7 @@
   color: white;
 }
 .block2 {
-  background-image: url(../../images/rrMartin/leftcol2.jpeg);
+  background-image: url(../images/rrMartin/leftcol2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,8 +156,9 @@
   background-color: #FFFFF0;
   border: 4px solid dimgrey;
   border-radius: 3px;
-  padding: 0px 0px 0px 0px;
   grid-area: blogCol;
+  padding: 0px 0px 0px 0px;
+  grid-column-start: span 2;
 
 }
 .blogCol h2 {
@@ -158,50 +172,30 @@
 .row {
   padding-left: 30px;
 }
-.footer {
-  background-image: url(../../images/rrMartin/footer-bg.jpeg);
+.foot {
+  background-image: url(../images/rrMartin/footer-bg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-area: footer;
+  grid-area: foot;
   padding: 50px;
   text-align: center;
 }
 
-@media screen and (min-width: 476px) and (max-width: 799px) {
+@media screen and (min-width: 480px) (max-width: 800px) {
   #grid {
-    background-image: url(../../images/rrMartin/bg2.jpg);
-    border: 3px solid red;
-    width: 100%;
     display: grid;
-    gap: 5px 5px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "header"
+    "top"
     "navbar"
-    "banner-container"
+    "banner"
     "topCol"
-    "main"
-    "aside"
-    "footer"
+    "leftCol"
+    "blogCol"
+    "foot"
   }
-  .topheader {
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-  }
-  .social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .col {
+  .topCol {
     display: flex;
     flex-direction: column;
   }
