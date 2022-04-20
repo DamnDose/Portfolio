@@ -7,16 +7,26 @@
 /* Quicksand & Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap');
 
-body {
-  background-color: #060709;
+* {
+  box-sizing: border-box;
 }
-
+.grid {
+  background-color: #01eaef;
+}
+.logo {
+  #
+}
   /* Navbar Styling */
 
-  .logo img {
-    width: 250px;
-    padding-left: 50px;
-  }
+#navbarNav {
+  font-size: 20px;
+}
+.navbar {
+  background-color: red;
+}
+.container-fluid {
+  background-color: #01eaef;
+}
 
 .portfolio p span {
   color: gold;
@@ -26,7 +36,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 50px;
   font-weight: 600;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 20px 0px 0px;
 }
 .gallery p span {
   color: #ff5f00;
@@ -48,67 +58,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.navbar .menu {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar .menu li {
-  list-style: none;
-}
-.navbar .menu li a {
-  color: white;
-  font-size: 25px;
-  margin: 5px;
-  transition: 0.3s ease;
-  text-decoration: none;
-}
-.navbar .menu li a:hover {
-  background-color: gold;
-  color: white;
-  font-weight: 600;
-}
-.navbar .menu .active {
-  background-color: gold;
-  border-radius: 5px;
-  color: white;
-  font-weight: 600;
-}
-.navbar .gall-menu {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar .gall-menu li {
-  list-style: none;
-}
-.navbar .gall-menu li a {
-  color: black;
-  font-size: 30px;
-  margin: 20px;
-  transition: 0.3s ease;
-  text-decoration: none;
-
-}
-.navbar .gall-menu li a:hover {
-  background-color: #ff6102;
-  color: white;
-  font-weight: 600;
-}
-.navbar .gall-menu .active {
-  background-color: #ff6102;
-  border-radius: 5px;
-  color: white;
-  font-weight: 600;
-}
-
 
 /* NAME STYLING */
 
 .name {
-  background-image: url("../images/dosepaint.png");
+  background-image: url("../images/randoms/dosepaint.png");
   background-repeat: no-repeat;
   background-position: right;
   font-family: 'Raleway', sans-serif;
@@ -281,14 +235,9 @@ body {
     .navbar {
       background-color: darkred;
     }
-    .navbar .menu {
-      display: flex;
-      flex-direction: column;
-
-    }
     .portfolio p span {
       color: gold;
-      }
+    }
     .portfolio {
       color: black;
       font-family: 'Quicksand', sans-serif;

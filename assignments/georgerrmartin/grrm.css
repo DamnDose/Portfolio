@@ -13,21 +13,25 @@
   width: 100%;
   display: grid;
   gap: 5px 5px;
-  grid-template-columns: 1fr, 1fr;
+  text-align: center;
+  grid-template-columns: 1fr 333px 667px 1fr;
   grid-template-areas:
-  "topH topH"
-  "navbar navbar"
-  "banner banner"
-  "topCol topCol"
-  "leftCol blogCol"
-  "leftCol blogCol"
-  "foot foot"
+  ". Header Header ."
+  ". navbar navbar ."
+  ". banner banner ."
+  ". topCol topCol ."
+  ". leftCol blogCol ."
+  ". leftCol blogCol ."
+  ". foot foot ."
 }
 #grrmSearch {
   background-color: #;
 }
 #buttonS {
   background-color: navy;
+}
+.Header {
+  grid-area: Header;
 }
 .navbar {
   grid-area: navbar;
@@ -50,10 +54,13 @@
   text-decoration: none;
   transition: 0.3s ease;
 }
-.navbar li a:hover {
+.navbar li:hover {
   background-color: dimgrey;
   color: white;
   padding: 5px;
+}
+.navbar li:hover a {
+  color: white;
 }
 .banner-container {
   grid-area: banner;
@@ -155,17 +162,17 @@
 .row {
   padding-left: 30px;
 }
-.footer {
+.foot {
   background-image: url(../../images/rrMartin/footer-bg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-area: footer;
+  grid-area: foot;
   padding: 50px;
   text-align: center;
 }
 
-@media screen and (min-width: 476px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
   #grid {
     background-image: url(../../images/rrMartin/bg2.jpg);
     border: 3px solid red;
@@ -173,18 +180,21 @@
     gap: 5px 5px;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "topH"
+    "Header"
     "navbar"
     "banner"
     "topCol"
     "blogCol"
     "leftCol"
-    "footer"
+    "foot"
   }
-  .topheader {
+  .topheader1 {
     display: flex;
-    flex-grow: row;
-    width: 20%;
+    flex-direction: row;
+  }
+  .topheader1 img:nth-child(2){
+    height: auto;
+    width: 85%;
   }
   .social {
     display: flex;
@@ -198,15 +208,15 @@
     flex-direction: column;
   }
   .banner-container {
-    padding-right: 250px;
-    width: 90%;
+    width: 100%;
   }
   .col {
-    width: 450px;
+    width: 100%;
   }
   .topCol {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .block1 {
     height: 200px;
@@ -218,6 +228,7 @@
   }
   .foot {
     padding: 40px;
+    grid-area: foot;
   }
 
 }
