@@ -22,41 +22,29 @@
   font-size: 20px;
 }
 .navbar {
-  background-color: red;
+  background: #01eaef;
+  font-family: 'Quicksand', sans-serif;
+}
+.nav-link:hover {
+  background-color: orange;
+  border-radius: 10%;
+}
+.nav-link .active {
+  color: red;
 }
 .container-fluid {
   background-color: #01eaef;
 }
 
-.portfolio p span {
+.portfolioT p span {
   color: gold;
   }
-.portfolio {
+.portfolioT {
   color: black;
   font-family: 'Quicksand', sans-serif;
   font-size: 50px;
   font-weight: 600;
-  padding: 0px 20px 0px 0px;
-}
-.gallery p span {
-  color: #ff5f00;
-  }
-.gallery {
-  color: black;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  padding: 0px 0px 0px 50px;
-}
-
-.navbar {
-  background: #01eaef;
-  font-family: 'Quicksand', sans-serif;
   padding: 0px 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 /* NAME STYLING */
@@ -64,7 +52,7 @@
 .name {
   background-image: url("../images/randoms/dosepaint.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   font-family: 'Raleway', sans-serif;
   height: 100vh;
   width: 100vw;
@@ -99,13 +87,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  width: auto;
-}
-.aboutme img {
-  border-radius: 4px;
-  float: left;
-  padding: 5px;
-  width: 200px
+  width: 100%;
 }
 .aboutme h1 {
   text-align: center;
@@ -113,7 +95,7 @@
   font-weight: 600;
 }
 .aboutme p {
-  color: white;
+  color: dimgrey;
   padding: 0px 0px 0px 10px;
 }
 .aboutme p span {
@@ -122,30 +104,48 @@
   font-size: 25px;
   font-weight: 600;
 }
-
 /* GALLERY */
-.goodvibes img {
-  border: 2px solid #ddd;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+
+.galleryT p span {
+  color: #ff5f00;
+  }
+.galleryT {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0px 20px 0px 0px;
+}
+.goodvibes {
+  border: 2px dashed green;
+}
+#gallgrid {
+  border: 3px solid red;
+  width: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: repeat(5, 1fr);
+}
+.gallpics {
+  background-color: dimgrey;
+  border: 3px solid blue;
 }
 
-.mywork img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 250px;
-  transition-duration: 0.5s;
-}
-.mywork img:hover {
-  border: 5px solid #ff5f00;
-  transform: scale(1.5);
-}
+/* ASSIGNMENTS */
 
+.assignmentsT p span {
+  color: green;
+  }
+.assignmentsT {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0px 20px 0px 0px;
+}
   /* FOOTER */
-  .footer{
+
+  .foot{
     background: url("../images/water.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,101 +154,15 @@
     margin-top: 50px;
   }
 
-  @media screen and (min-width: 800px) {
-  }
-  @media screen and (min-width: 480px) and (max-width: 799px) {
-    body {
-      background-color: #white;
-    }
-    .grid .max-width {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    /* NAME STYLING */
-
-    .navbar {
-      background-color: darkorange;
-      border: 1px solid black;
-    }
-
-    .portfolio p span {
-      color: gold;
-      }
-    .portfolio {
-      color: black;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 50px;
-      font-weight: 600;
-      padding: 0px 0px 0px 50px;
-    }
-    .navbar .menu {
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .navbar .menu li a {
-      color: white;
-      font-size: 25px;
-      margin: 5px;
-      transition: 0.3s ease;
-    }
-    .name {
-      background-image: url("../images/dosepaint.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      font-family: 'Raleway', sans-serif;
-      height: 100vh;
-      width: 100vw;
-      color: white;
-      display: flex;
-      padding: 10px;
-    }
-    .name-content {
-      padding-top: 10px;
-    }
-    .name .textline-1 {
-      font-size: 27px;
-    }
-    .name .textline-2 {
-      font-size: 75px;
-      font-weigth: 600;
-      margin-lef: -3px
-    }
-    .name .textline-3 {
-      font-size: 40px;
-      margin: 5px 0;
-    }
-    .name .textline-3 span {
-      color: orange;
-    }
-  }
-
-  /* SMALLER THAN MOBILE..... Ewwww :) */
-
-  @media screen and (min-width: 200px) and (max-width: 479px) {
-    body {
-      background-color: darkblue;
-    }
-    .navbar {
-      background-color: darkred;
-    }
-    .portfolio p span {
-      color: gold;
-    }
-    .portfolio {
-      color: black;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 50px;
-      font-weight: 600;
-      padding: 0px 0px 0px 50px;
-    }
-    .navbar .menu li a {
-      color: white;
-      font-size: 30px;
-      margin: 20px;
-      transition: 0.3s ease;
+  @media screen and (max-width: 799px) {
+    #grid {
+      display: grid;
+      gap: 5px 5px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "."
+      "."
+      "."
+      "."
     }
   }
