@@ -1,23 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <title>Testing site page</title>
+    <style>
+      body {
+        margin: 20px;
+        padding: 0px;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 150px 200px;
+        grid-gap: 10px;
+      }
+      .gall-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+      .gall-item .image {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .gall-item .image img {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        transition: .5s ease-in-out;
+      }
+      .gall-item:hover .image img {
+        transform: scale(1.5);
+      }
+      .gall-item .text {
+        color: white;
+        font-size: 30px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+    </style>
   </head>
   <body>
-    <header>
-      <div class="shield">
-        <img src="../images/rrMartin/shield.jpeg" alt="Shield Logo">
-      </div>
-      <div class="grrmHeader">
-        <img src="../images/rrMartin/rrHeader.jpeg" alt="Shield Logo">
-      </div>
-      <div class="socialmedia">
-        <img src="../images/rrMartin/headerFB.jpeg" alt="Shield Logo">
-        <img src="../images/rrMartin/headerT.jpeg" alt="Shield Logo">
-        <img src="../images/rrMartin/headerC.jpeg" alt="Shield Logo">
-      </div>
-    </header>
+    <h1>Test Grid</h1>
+    <div class="container">
 
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 01</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 02</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 03</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 04</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 05</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 06</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 07</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 08</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 09</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 10</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 11</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 12</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 13</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 14</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 15</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 16</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Assignment 17</div>
+        </div>
+      </div>
+
+      <div class="gall-container">
+        <div class="gall-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?bikes" alt="assignment#">
+          </div>
+          <div class="text">Projects</div>
+        </div>
+      </div>
+
+
+
+    </div>
   </body>
 </html>
