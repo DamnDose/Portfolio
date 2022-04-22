@@ -74,7 +74,9 @@
 .name-content {
   padding: 0px 0px 0px 50px;
   position: sticky;
-  bottom: 40%;
+  bottom: 300px;
+
+  /* margin-bottom: auto; */
 }
 .name .textline-1 {
   font-size: 27px;
@@ -101,7 +103,6 @@
   height: 300px;
 }
 .aboutme {
-  background: url("../images/aboutme.png") no-repeat center;
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
   margin-left: auto;
