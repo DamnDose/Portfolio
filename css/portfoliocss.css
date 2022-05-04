@@ -253,3 +253,27 @@ h3 span {
       "."
     }
   }
+
+  /* BLOG */
+  .blogtext {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 250px;
+  }
+
+  .blogtext h2 {
+    text-align: center;
+  }
+
+  .blogbutton {
+    background-color: green;
+    color: lightyellow;
+    font-family: Anton;
+    padding: 5px;
+  }
+
+  .blogbutton:hover {
+    background-color: orange;
+    border-radius: 10%;
+  }
